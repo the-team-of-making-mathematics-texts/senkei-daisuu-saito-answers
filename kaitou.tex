@@ -1,0 +1,1670 @@
+\documentclass[dvipdfmx,uplatex,11pt]{jsarticle}
+%
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{wrapfig}
+\usepackage{bm}
+\usepackage{ascmac}
+\setcounter{tocdepth}{2}
+\usepackage{ulem}
+\usepackage{geometry}
+\usepackage{framed}
+\usepackage{latexsym}
+%
+\geometry{left=10mm,right=10mm,top=5mm,bottom=10mm}
+%
+\title{線型代数入門：解答集}
+\author{編集者：}
+\date{最終更新日：\today}
+%
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+%
+%
+%
+\section{第１章：平面および空間のベクトル（解答）}
+\subsection{p8}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p10}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p11〜12}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p13}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p18}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p19}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p22〜23}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p29〜30（章末問題）}
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第２章：行列（解答）}
+\subsection{p34}
+\noindent
+問１：行列$A，B，C$に対し、以下が成り立つ。
+\begin{eqnarray*}
+A(B+C)=AC+AC \hspace{5zw} (A+B)C=AC+BC \hspace{5zw} AO=O  \hspace{5zw} OA=O
+\end{eqnarray*}
+$\textsl{Hint}：単純な行列の和・積に関する命題は，両辺の(i,j)成分を比較する方法が１つある。今回はそれを使う命題であるが，(i,j)成分を計算する際，左辺は積の形になっているので，どうしても\sum を使わざるを得ない。その時は公式に当てはめるなど頭を使わない方法ではなく，丁寧に成分ごとで1つ1つ計算していき，最後に\sum でまとめて証明として書き出せばいい。$
+\begin{leftbar}
+\begin{proof}
+~\\
+後半二つの主張は明らか。また，二つ目の主張は一つ目の主張と同様にして示すことができるので，一つ目のみ示すことにする。\\
+$A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列とする。示したい式の両辺がともに定義され、ともに$k \times m行列であることはよい。行列B+Cの(q,r)成分はb_{qr}+c_{qr}であるから、左辺の(p,r)成分は、$
+\begin{eqnarray*}
+\sum_{q=1}^{l}a_{pq}\left(b_{qr}+c_{qr}\right)=\sum_{q=1}^{l}a_{pq}b_{qr}+\sum_{q=1}^{l}a_{pq}c_{qr}
+\end{eqnarray*}
+と書ける。この等号の右辺は$ABの(p,r)成分とACの(p,r)成分の和である。$これより，主張が示された。
+\end{proof}
+\end{leftbar}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p41}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p42}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p48}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p53}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p62〜63}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p65}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p70（章末問題）}
+問６：$n次行列Aについて，次の事柄を証明せよ。$\\
+$イ)A_k = E となるkがあれば，Aは正則である。$\\
+$ロ)A^2 = A，A\neq Eならば、Aは正則ではない。$\\
+$ハ)A_k = Oとなるkがあれば，Aは正則ではない。（このような行列を\textbf{冪零行列}という。)$\\
+$ニ)Aが冪零ならば，E+A,，E−Aはそれぞれ正則である。さらに、(E + A)^{−1},(E − A)^{−1}をAで表せ。$
+\begin{leftbar}
+\begin{proof}
+~\\
+イ）$A_k=Eなるkが存在したとする。k = 1 ならば明らか。$\\
+$k>2ならば、A^k=A·A^{k-1}=A^{k-1}· A = E となるので、A^{k-1}がAの逆行列となるので，Aは正則。$\\
+\\
+$ロ)Aが正則であるとする。A^2=Aの両辺にA^{-1}をかけると，A=Eとなるが，これは仮定に反する。$\\
+\\
+$ハ)A^k=Oとなる k が存在したとして、A が正則であるとする。この等式の両辺に (A^{−1})^kをかけるとE=Oとなるが，これは明らかに矛盾。$\\
+\\
+$ニ)E−A に関してのみ示す。他方も同様にして示せる。A^{k}=Oとなるkが存在したとする。$\\
+$すると$
+\begin{eqnarray*}
+(E − A)(E+A+ \cdots +A^{k−1})=(E+A+ \cdots + A^{k−1})(E−A)=E−A^k=E
+\end{eqnarray*}
+$となることから主張が従う。$
+\end{proof}
+\end{leftbar}
+%
+%
+%
+\newpage
+%
+%
+%
+問１１：$n次行列Pが，^tPP= Eを充し，P+Eは正則であるとする。$\\
+1.$ (P − E)(P + E) = (P + E)(P − E)$\\
+2.$ A=(P−E)(P+E)^{−1}とおくと，^tA=−A$\\
+3.$E−Aは正則$\\
+4.$P=(E + A)(E − A)^{−1}$
+\begin{proof}
+\begin{leftbar}
+~\\
+$Pをn次正方行列で$
+\begin{eqnarray*}
+^t PP=E\\
+P+Eは正則
+\end{eqnarray*}
+$を満たしているとする。$\\
+1.$(P − E)(P + E) = (P + E)(P − E)右辺と左辺をそれぞれ計算する.$
+\begin{eqnarray*}
+& (右辺) = P^2+P−P−E=P^2−E\\
+& (右辺) = P^2−P+P−E=P^2−E
+\end{eqnarray*}
+2.$A := (P − E)(P + E)^{−1}とおくと，^tA=−A$
+\begin{eqnarray*}
+^tA&=&^t((P−E)(P+E)^{−1})\\
+&=&^t((P+E)^{-1})^t(P−E)\\
+&=&(^t(P+E))^{-1}(^tP−E)\\
+&=&(^tP+^tPP)^{-1}(^tP−^tPP)\\
+&=&(^tP(E + P))^{-1}(^tP(E − P))\\
+&=&(E + P)^{−1}(^tP)^{−1}(^tP)(E − P)\\
+&=&(E + P)^{−1}(E − P)\\
+&=&−(P + E)^{−1}(P − E)\\
+\end{eqnarray*}
+$仮定P+Eの正則性より，(1)の両辺にP+Eの逆行列を左, 右から掛ければ$
+\begin{eqnarray*}
+& (P + E)^{-1}(P − E)(P + E)(P + E)^{−1}=(P + E)^{−1}(P + E)(P − E)(P + E)^{−1}\\
+& (P + E)^{−1}(P − E)=(P − E)(P + E)^{−1}
+\end{eqnarray*}
+が成り立つことから,
+\begin{eqnarray*}
+^tA = −(P + E)^{−1}=(P − E) = −(P − E)(P + E)^{−1}= −A
+\end{eqnarray*}
+となる。\\
+\\
+3.$E − A は正則$\\
+$\dfrac{1}{2}(P + E) が逆行列であることを示す。$
+\begin{eqnarray*}
+(E−A)(P+E)&=&P+E−A(P+E)\\
+&=&P+E+(−(P − E)(P + E)^{−1})(P + E)\\
+&=&P+E−P+E \\
+&=&2E
+\end{eqnarray*}
+より, 題意は示される。
+\end{leftbar}
+%
+%
+%
+\newpage
+%
+%
+%
+\begin{leftbar}
+4.$P= (E + A)(E − A)^{−1}$
+\begin{eqnarray*}
+(E + A)(E − A)^{−1}&=&(E − P + P + A)\frac{1}{2}(P + E)\\
+&=&\frac{1}{2}(E − P)(E + P)+\frac{1}{2}P(P + E)+\frac{1}{2}A(P + E)\\
+&=&\frac{1}{2}(E − P^2) +\frac{1}{2}(P^2+P)+\frac{1}{2}(P − E)(P + E)^{−1}(P + E)\\
+&=&\frac{1}{2}(E − P^2)+\frac{1}{2}(P^2+P)+\frac{1}{2}(P − E)\\
+&=&P
+\end{eqnarray*}
+\end{leftbar}
+\end{proof}
+以上より題意は示された.
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第３章：行列式（解答）}
+\subsection{p83}
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p90（章末問題）}
+問１０：$成分が全て整数であるような正方行列Aが正則で，かつA^{−1}がまた整数行列であるためには，Aの行列式が\pm 1となることが必要かつ十分であることを示せ.$
+\begin{leftbar}
+\begin{proof}
+必要性・十分性をそれぞれ証明する.\\ \\
+1.$Aが正則かつA^{−1}が整数行列であると仮定し，\det A=\pm 1であることを示す。$\\
+$Aは整数行列であり，その行列式は，各要素の和と積でかけているから\det A \in \mathbb{Z}である。同様にして\det (A^{−1}) \in \mathbb{Z}である。逆行列の行列式は，$
+\begin{eqnarray*}
+\det (A^{−1})=\frac{1}{\det A}
+\end{eqnarray*}
+$が成り立つ.。つまり，\det A，1/\det A \in \mathbb{Z} である。これを満たす整数は\pm 1だけである。$\\
+\\
+2.$\det A=\pm 1であることを仮定し，Aが正則かつA^{−1}が整数行列であることを示す。$\\
+$\det A \neq 0 より A の正則性がわかる。また，Aの余因子行列を\tilde{A}とすると，余因子はAの各要素の和と積によって表現される。つまり，余因子は整数であるから\tilde{A}は整数行列である. また$
+\begin{eqnarray*}
+A^{−1}=\frac{1}{\det A}\tilde{A}
+\end{eqnarray*}
+$となる。\det A=\pm 1であり， 余因子は整数であるから，A^{−1}は整数行列である。$
+\end{proof}
+\end{leftbar}
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第４章：線型空間（解答）}
+\subsection{p94}
+\noindent
+問：$(m,n)型行列の全体を\bm{M_{m,n}}とする。\bm{M_{m,n}}の二つの元A,Bに対し，AからBまで基本変形を続けて行なうことによって移り得るとき，A〜Bと定義すれば，〜は\bm{M_{m,n}}における同値関係であることを示せ。\bm{M_{m,n}}の〜による商集合は何個の元より成るか。$\\ \\
+\textsl{Hint}：集合$A$の元$a,b,c$に対して，同値関係であることはP93の定義から反射律・対称律・推移律が成立することなので，これを示せばよい。商集合の元の個数は商集合の定義に振り返る。\\ \\
+まず，同値関係であることを示す。$A,B \in \bm{M_{m,n}}，P,Q,R,Sを正則行列とする。$\\
+基本行列の積は正則行列で表されることを用いて\\
+・$E_{m}AE_{n}=A~~（反射律）$ \\
+・$PAQ=Bならば，A=P^{-1}BQ^{-1}~~（対称律）$\\
+・$PAQ=B，RBS=Cならば，PAQ=R^{-1}CS^{-1} \Longleftrightarrow (PR)A(QS)=C$~~（推移律）\\
+より同値関係である。\\
+また，同値関係ごとに類別した類は正則行列を掛けることにより，ある標準形$F_{m,n}(r)$に直すことができる$(m,n)$型行列全体である。これを$C(r)$とおく。よって商集合はこの類全体の集合なので，$C(0)，C(1)，\cdots ，C({\rm min}(m,n))$である。よって元の個数は$1+{\rm min}(m,n)$個である。
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p106}
+\noindent
+問１：$\bm{K^3}$において
+\begin{eqnarray*}
+E=〈
+\begin{pmatrix}
+1 \\
+0 \\
+1
+\end{pmatrix}
+,
+\begin{pmatrix}
+2 \\
+1 \\
+0
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 \\
+1 \\
+1
+\end{pmatrix}
+〉，~~~~F=〈
+\begin{pmatrix}
+3 \\
+-1 \\
+4
+\end{pmatrix}
+,
+\begin{pmatrix}
+4 \\
+1 \\
+8
+\end{pmatrix}
+,
+\begin{pmatrix}
+3 \\
+-2 \\
+6
+\end{pmatrix}
+〉
+\end{eqnarray*}
+はともに基底である。基底の取り替え$E→F$の行列を求めよ。\\ \\
+\textsl{Hint}：単なる計算問題なので手順通り求めればよいが，求めるときはp106の(3)式が有用である。\\ \\
+求める$E→F$の取り替え行列を$P=(p_{ij})$とし，
+\begin{eqnarray*}
+\bm{e}_1=
+\begin{pmatrix}
+1 \\
+0 \\
+1
+\end{pmatrix}
+，
+\bm{e}_2=
+\begin{pmatrix}
+2 \\
+1 \\
+0
+\end{pmatrix}
+，
+\bm{e}_3=
+\begin{pmatrix}
+1 \\
+1 \\
+1
+\end{pmatrix}
+，
+\bm{f}_1=
+\begin{pmatrix}
+3 \\
+-1 \\
+4
+\end{pmatrix}
+，
+\bm{f}_2=
+\begin{pmatrix}
+4 \\
+1 \\
+8
+\end{pmatrix}
+，
+\bm{f}_3=
+\begin{pmatrix}
+3 \\
+-2 \\
+6
+\end{pmatrix}
+\end{eqnarray*}
+とする。~~p106の(3)式から
+\begin{eqnarray*}
+\bm{f}_i=\sum^{3}_{j=1}p_{ji}\bm{e}_{j}=p_{1i}\bm{e}_1+p_{2i}\bm{e}_2+p_{3i}\bm{e}_3
+\end{eqnarray*}
+それぞれ$i=1,2,3$について連立方程式を作ると
+\begin{eqnarray*}
+f_1=p_{11}\bm{e}_1+p_{21}\bm{e}_2+p_{31}\bm{e}_3 \\
+f_2=p_{12}\bm{e}_1+p_{22}\bm{e}_2+p_{32}\bm{e}_3 \\
+f_3=p_{13}\bm{e}_1+p_{23}\bm{e}_2+p_{33}\bm{e}_3
+\end{eqnarray*}
+これを解くことにより$p_{11}=\frac{9}{2},p_{21}=-\frac{1}{2},p_{31}=-\frac{1}{2},p_{12}=5,p_{22}=-2,p_{32}=3,p_{13}=\frac{13}{2},p_{23}=-\frac{3}{2},p_{33}=-\frac{1}{2}$なので
+\begin{eqnarray*}
+P=
+\begin{pmatrix}
+9/2 & 5  & 13/2 \\
+-1/2 & -2 & -3/2 \\
+-1/2 & 3 & -1/2
+\end{pmatrix}
+\end{eqnarray*}
+である。またp106の(3)式を簡単な計算をすることにより
+\begin{eqnarray*}
+(\bm{f}_1,\bm{f}_2,\cdots ,\bm{f}_n)=(\bm{e}_1,\bm{e}_2,\cdots ,\bm{e}_n)P
+\end{eqnarray*}
+であるから
+\begin{eqnarray*}
+\begin{pmatrix}
+3 & 4 & 3 \\
+-1 & 1 & -2 \\
+4 & 8 & 6 \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 2 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+\end{pmatrix}
+P \\ 
+%
+%
+%
+P=
+\begin{pmatrix}
+3 & 4 & 3 \\
+-1 & 1 & -2 \\
+4 & 8 & 6 \\
+\end{pmatrix}
+\begin{pmatrix}
+1 & 2 & 1 \\
+0 & 1 & 1 \\
+1 & 0 & 1 \\
+\end{pmatrix}
+^{-1}
+\end{eqnarray*}
+から求めることもできる。\\ \\
+問２：$\bm{K}^3の元
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+\end{pmatrix}
+で，x_1+x_2+x_3=0を充すものの全体は2次元の線型空間をつくる。
+$
+\begin{eqnarray*}
+E=〈
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 \\
+0 \\
+-1
+\end{pmatrix}
+〉，~~~~F=〈
+\begin{pmatrix}
+0 \\
+1 \\
+-1
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 \\
+1 \\
+-2
+\end{pmatrix}
+〉
+\end{eqnarray*}
+はともにその基底である。基底の取り替え$E→Fの行列を求めよ。$\\ \\
+\textsl{Hint}：問１と同様に計算すればよい。本解答では問１の最後で紹介した計算方法では計算できないことに注意したい。\\ \\
+p106の(3)式から
+\begin{eqnarray*}
+\bm{f}_i=\sum^{2}_{j=1}p_{ji}\bm{e}_{j}=p_{1i}\bm{e}_1+p_{2i}\bm{e}_2
+\end{eqnarray*}
+よって
+\begin{eqnarray*}
+& \bm{f}_1=p_{11}\bm{e}_1+p_{21}\bm{e}_2 \\
+& \bm{f}_2=p_{12}\bm{e}_1+p_{22}\bm{e}_2 \\ \\
+%%%
+&
+\begin{pmatrix}
+0 \\
+1 \\
+-1 \\
+\end{pmatrix}
+=
+p_{11}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
++p_{21}
+\begin{pmatrix}
+1 \\
+0 \\
+-1 \\
+\end{pmatrix}
+\\ \\
+&
+\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix}
+=
+p_{12}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
++p_{22}
+\begin{pmatrix}
+1 \\
+0 \\
+-1 \\
+\end{pmatrix}
+\end{eqnarray*}
+よって$p_{11}=-1,p_{21}=1,p_{12}=-1,p_{22}=2$であるから基底の取り替え$E→F$の行列は
+\begin{eqnarray*}
+P=
+\begin{pmatrix}
+-1 & -1 \\
+1 & 2 \\
+\end{pmatrix}
+\end{eqnarray*}
+である。
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p107-108}
+\noindent
+問１：つぎの$\bm{K}^nの部分集合のうち，部分空間であるものを指摘し，その次元を求めよ。$\\
+イ）$x_1+x_2+ \cdots x_n=0なる\bm{x}=(x_i)の全体$\\
+ロ）$x_{p+1}=x_{p+2}= \cdots =x_{n}=0~(1 \leqq p \leqq n)なる\bm{x}の全体$\\
+ハ）$x_1^2+x_2^2+\cdots +x_n^2=1からなる\bm{x}の全体$\\
+ニ）$ある\bm{a}に対して，(\bm{a,x})=0となる\bm{x}の全体$\\ \\
+\textsl{Hint}：部分空間の定義P107の(1)式から部分空間の判定を行う。次元は単に基底の個数を数えればよい。部分空間でないときは単に反例を示せばいい。\\
+%%%
+\dotfill \\
+%%%
+イ）この$\bm{x}全体は$部分空間をなす。実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする。
+\begin{eqnarray*}
+\bm{x}+\bm{y}=
+\begin{pmatrix}
+x_1+y_1 \\
+x_2+y_2 \\
+\vdots \\
+x_n+y_n
+\end{pmatrix}
+,~~~
+a\bm{x}=
+\begin{pmatrix}
+ax_1 \\
+ax_2 \\
+\vdots \\
+ax_n
+\end{pmatrix}
+\end{eqnarray*}
+条件から$(x_1+y_1)+(x_2+y_2)+\cdots (x_n+y_n)=(x_1+x_2+\cdots +x_n)+(y_1+y_2+\cdots +y_n)=0$\\
+$ax_1+ax_2+ \cdots +ax_n=a(x_1+x_2+\cdots x_n)=0であるから，\bm{x}+\bm{y} \in W,~a\bm{x} \in W$である。よって，この空間は部分空間をなす。また次元は
+\begin{eqnarray*}
+\bm{x}=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_{n-1} \\
+x_n
+\end{pmatrix}
+=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_{n-1} \\
+-(x_1+x_2+\cdots x_{n-1})
+\end{pmatrix}
+=
+x_1
+\begin{pmatrix}
+1 \\
+0 \\
+\vdots \\
+0 \\
+-1
+\end{pmatrix}
++x_2
+\begin{pmatrix}
+0 \\
+1 \\
+\vdots \\
+0 \\
+-1
+\end{pmatrix}
++\cdots +x_{n-1}
+\begin{pmatrix}
+0 \\
+0 \\
+\vdots \\
+1 \\
+-1\\
+\end{pmatrix}
+\end{eqnarray*}
+により，明らかに$n-1$である。\\
+%%%
+\dotfill \\
+%%%
+ロ）この$\bm{x}全体は部分空間をなす。$実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする。
+\begin{eqnarray*}
+\bm{x}+\bm{y}=
+\begin{pmatrix}
+x_1+y_1 \\
+x_2+y_2 \\
+\vdots \\
+x_{p}+y_{p} \\
+x_{p+1}+y_{p+1} \\
+\vdots \\
+x_n+y_n
+\end{pmatrix}
+,~~~
+a\bm{x}=
+\begin{pmatrix}
+ax_1 \\
+ax_2 \\
+\vdots \\
+ax_{p} \\
+ax_{p+1} \\
+\vdots \\
+ax_n
+\end{pmatrix}
+\end{eqnarray*}
+条件から$x_{p+1}+y_{p+1}=x_{p+2}+y_{p+2}=\cdots =x_{n}+y_{n}=0，ax_{p+1}=ax_{p+2}=\cdots =ax_n=0である。$\\
+よって$\bm{x}+\bm{y} \in W, a\bm{x} \in W$であるから，この空間は部分空間をなす。また次元は
+\begin{eqnarray*}
+\bm{x}=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_{p} \\
+x_{p+1} \\
+\vdots \\
+x_n \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+\vdots \\
+x_{p} \\
+0 \\
+\vdots \\
+0 \\
+\end{pmatrix}
+=x_1
+\begin{pmatrix}
+1 \\
+0 \\
+\vdots \\
+0 \\
+0 \\
+\vdots \\
+0 \\
+\end{pmatrix}
++x_2
+\begin{pmatrix}
+0 \\
+1 \\
+\vdots \\
+0 \\
+0 \\
+\vdots \\
+0 \\
+\end{pmatrix}
++\cdots +x_p
+\begin{pmatrix}
+0 \\
+0 \\
+\vdots \\
+1 \\
+0 \\
+\vdots \\
+0 \\
+\end{pmatrix}
+\end{eqnarray*}
+により$p$である。\\
+%%%
+\dotfill \\
+%%%
+ハ）この$\bm{x}全体$は部分空間をなさない。実際
+\begin{eqnarray*}
+\bm{x}=
+\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+\vdots \\
+0
+\end{pmatrix}
+,~~~~
+\bm{y}=
+\begin{pmatrix}
+0 \\
+1 \\
+0 \\
+\vdots \\
+0
+\end{pmatrix}
+\end{eqnarray*}
+とすると
+\begin{eqnarray*}
+\bm{x}+\bm{y}=
+\begin{pmatrix}
+1 \\
+1 \\
+0 \\
+\vdots \\
+0
+\end{pmatrix}
+\end{eqnarray*}
+条件に当てはめると$1^2+1^2=2 \neq 1$より，加法に関して（また示していないがスカラー倍に関しても）閉じていないので$\bm{x}+\bm{y} \not\in W$である。\\
+%%%
+\dotfill \\
+%%%
+ニ）この$\bm{x}全体$は部分空間をなす。$実際，この条件を満たす空間をW，c \in \bm{K}とし，\bm{x,y} \in W$とする。\\
+内積の定義から
+\begin{eqnarray*}
+(\bm{a},\bm{x}+\bm{y})=(\bm{a},\bm{x})+(\bm{a},\bm{y})=0 ,~~~~~(\bm{a},c\bm{x})=c(\bm{a},\bm{x})=0
+\end{eqnarray*}
+よって$\bm{x}+\bm{y} \in W, c\bm{x} \in W$から部分空間をなす。次元を求めるため，$\bm{a}=(a_{i})$とおく。
+\begin{itemize}
+\item $\bm{a} \neq \bm{o}のとき$
+\begin{eqnarray*}
+(\bm{a},\bm{x})=a_1x_1+a_2x_2+ \cdots +a_nx_n=0
+\end{eqnarray*}
+より$a_n \neq 0$のとき
+\begin{eqnarray*}
+x_n=-\frac{a_1}{a_n}x_{1}-\frac{a_2}{a_n}x_{2}- \cdots -\frac{a_{n-1}}{a_n}x_{n-1}
+\end{eqnarray*}
+となり，このときの部分空間$Wの次元はn-1$である。（明らかなので，詳細は略）\\
+また$a_n=0$のとき
+\begin{eqnarray*}
+(\bm{a},\bm{x})=a_1x_1+a_2x_2+ \cdots +a_{n-1}x_{n-1}=0
+\end{eqnarray*}
+と書き直せ，$a_{n-1} \neq 0$のとき
+\begin{eqnarray*}
+x_{n-1}=-\frac{a_1}{a_{n-1}}x_{1}-\frac{a_2}{a_{n-1}}x_{2}- \cdots -\frac{a_{n-2}}{a_{n-1}}x_{n-2}
+\end{eqnarray*}
+となる。このときの部分空間$Wの次元はn-1である。$よって帰納的に$\bm{a}$に0でない成分が存在するとき，次元は$n-1$である。\\
+\item $\bm{a} \neq \bm{o}のとき，(\bm{a},\bm{x})は\bm{x}の成分に依らず0となる。よって次元はnである。$
+\end{itemize}
+よって次元は
+\begin{eqnarray*}
+{\rm dim}~W=
+\left\{
+\begin{array}{l}
+n-1~~(\bm{a} \neq \bm{o}) \\
+~~~~~n~~(\bm{a}=\bm{o})
+\end{array}
+\right.
+\end{eqnarray*}
+となる。\\
+%%%
+\dotfill \\
+\newpage
+\noindent
+%
+問２：つぎの$\bm{M}_n(\bm{K})の部分集合のうち，部分空間であるものを指摘せよ。$\\
+イ）非正則行列の全体\\
+ロ）ある$A,B$に対し，$AX=XBとなるX$の全体\\
+ハ）冪零行列（$X^k=Oとなるkが存在するもの$）の全体\\
+ニ）整数を成分とする行列全体\\ \\
+\textsl{Hint}：直感で部分空間とならない集合が分からない場合は，具体例を何個か上げて反例が無いか調べる。大丈夫そうなら実際に証明してみる方向でいいだろう。\\
+%%%
+\dotfill \\
+%%%
+イ）これは部分空間をなさない。実際，非正則行列全体の集合を$Wとし，A,B \in W$を
+$
+A=
+\begin{pmatrix}
+1 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+,~~
+B=
+\begin{pmatrix}
+0 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+$
+とすると
+\begin{eqnarray*}
+A+B=
+\begin{pmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{pmatrix}
+\end{eqnarray*}
+これは正則行列であるから，$A+B \not\in W$である。よって加法に関して閉じていないので部分空間をなさない。\\
+%%%
+\dotfill \\
+%%%
+ロ）これは部分空間をなす。実際，$AX=XBとなるX全体の集合をWとし，X,Y \in W$とすると
+\begin{eqnarray*}
+AX=XB \\
+AY=YB
+\end{eqnarray*}
+この２式の辺々を足したり，第１式の両辺を$a$倍することで
+\begin{eqnarray*}
+A(X+Y)=(X+Y)B \\
+A(aX)=(aX)B
+\end{eqnarray*}
+$X+Y,~aXを1つの行列として見ればX+Y \in W,~aX \in Wである。よって部分空間をなす。$\\
+%%%
+\dotfill \\
+%%%
+ハ）これは部分空間をなさない。実際，冪零行列全体の集合を$Wとし，A,B \in Wを$
+$
+A=
+\begin{pmatrix}
+1 & -1 \\
+1 & -1 \\
+\end{pmatrix}
+,~~
+B=
+\begin{pmatrix}
+1 & 1 \\
+-1 & -1 \\
+\end{pmatrix}
+$
+とおくと
+\begin{eqnarray*}
+A+B=
+\begin{pmatrix}
+2 & 0 \\
+0 & -2 \\
+\end{pmatrix}
+\end{eqnarray*}
+これは冪零行列ではないので，$A+B \not\in Wである。よって加法に関して閉じてないので部分空間をなさない。$\\
+%%%
+\dotfill \\
+%%%
+ニ）これは部分空間をなさない。実際，整数を成分とする行列全体を$Wとし，$
+$
+A=
+\begin{pmatrix}
+1 & 1 \\
+1 & 1 \\
+\end{pmatrix}
+\in W
+$
+とする。
+\begin{eqnarray*}
+\frac{1}{2}A=
+\begin{pmatrix}
+1/2 & 1/2 \\
+1/2 & 1/2 \\
+\end{pmatrix}
+\not\in W
+\end{eqnarray*}
+よりスカラー倍に関して閉じていないので部分空間をなさない。\\
+%%%
+\dotfill \\
+\newpage
+%%%
+\subsection{p121}
+問：$\mathbb{R}^3の
+\begin{pmatrix}
+1 \\
+-1 \\
+0
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 \\
+0 \\
+-1
+\end{pmatrix}
+,
+\begin{pmatrix}
+1 \\
+2 \\
+3
+\end{pmatrix}
+$
+から，シュミットの直交化法によって正規直交基底を作れ。\\ \\ \\
+\textsl{Hint}：p127にある定理をそのまま使って，どの２つのベクトルも直交するようなベクトルを作り，大きさを１にするように計算する。具体的に解き方は以下の解法を参照。\\
+%%%
+\dotfill \\ \\
+%%%
+$\bm{a}_1=
+\begin{pmatrix}
+1 \\
+-1 \\
+0
+\end{pmatrix}
+,\bm{a}_2=
+\begin{pmatrix}
+1 \\
+0 \\
+-1
+\end{pmatrix}
+,\bm{a}_3=
+\begin{pmatrix}
+1 \\
+2 \\
+3
+\end{pmatrix}
+とおいて，シュミットの直交化法によって作られる，どの２つのベクトルも直交するようなベクトルを\bm{b}_1, \bm{b}_2, \bm{b}_3 ，正規直交基底を\bm{c}_1, \bm{c}_2, \bm{c}_3 とする。$
+\begin{eqnarray*}
+& \bm{b}_1=\bm{a}_1=
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
+\longrightarrow
+\bm{c}_1=\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
+\\ \\
+& \bm{b_2}=\bm{a}_2-(\bm{a}_2, \bm{c}_1)\bm{c}_1=
+\begin{pmatrix}
+1 \\
+0 \\
+-1 \\
+\end{pmatrix}
+-\frac{1}{2}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
+=\frac{1}{2}
+\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix}
+\longrightarrow
+\bm{c}_2 =\frac{1}{\sqrt{6}}
+\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix}
+\\ \\
+& \bm{b}_3=\bm{a}_3-(\bm{a}_3, \bm{c}_1)\bm{c}_1 -(\bm{a}_3, \bm{c}_2)\bm{c}_2=
+\begin{pmatrix}
+1 \\
+2 \\
+3 \\
+\end{pmatrix}
++\frac{1}{2}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
++\frac{1}{2}
+\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+2 \\
+2 \\
+2 \\
+\end{pmatrix}
+\longrightarrow 
+\bm{c}_3 =\frac{1}{\sqrt{3}}
+\begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix}
+\end{eqnarray*}
+よって正規直交基底は
+\begin{eqnarray*}
+\left\{
+\bm{c}_1=\frac{1}{\sqrt{2}}
+\begin{pmatrix}
+1 \\
+-1 \\
+0 \\
+\end{pmatrix}
+,
+\bm{c}_2 =\frac{1}{\sqrt{6}}
+\begin{pmatrix}
+1 \\
+1 \\
+-2 \\
+\end{pmatrix}
+,
+\bm{c}_3 =\frac{1}{\sqrt{3}}
+\begin{pmatrix}
+1 \\
+1 \\
+1 \\
+\end{pmatrix}
+\right\}
+\end{eqnarray*}
+\dotfill \\
+【参考】正規直交基底を求めるシュミットの直交化法は次のように書き直せる。
+\begin{eqnarray*}
+& \bm{b}_1 =\bm{a}_1 \\ \\
+& \bm{b}_2 =\bm{a}_2-\frac{(\bm{a}_2 ,\bm{b}_1)}{(\bm{b}_1 ,\bm{b}_1 )}\bm{b_1} \\ \\
+& \bm{b}_3 =\bm{a}_3-\frac{(\bm{a}_3 ,\bm{b}_1)}{(\bm{b}_1 ,\bm{b}_1 )}\bm{b_1} 
+\end{eqnarray*}
+この式からそれぞれ$\bm{b}_1, \bm{b}_2, \bm{b}_3 を求めて，それぞれ大きさ１のベクトルにすれば正規直交基底が得られる。$
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p124}
+\noindent
+問：[6.5]（下のを証明せよ。\\ \\
+1)~$(\bm{W}^{\perp })^{\perp }=\bm{W}$ \\
+2)~$(\bm{W}_1+\bm{W}_2)^{\perp}=\bm{W}^{\perp}_1 \cup \bm{W}^{\perp}_2 $\\
+3)~$(\bm{W}_1 \cap \bm{W}_2)^{\perp}=\bm{W}^{\perp}_1+\bm{W}^{\perp}_2 $ \\ \\
+\textsl{Hint}：直交補空間の定義から明らか，としては勿論いけない。直交補空間の定義から，地道に論証していく必要がある。\\ 
+\dotfill \\
+1)$^{\forall}\bm{x} \in \bm{W}に対し，(\bm{x},\bm{y})=0となる\bm{y} \in \bm{W}^{\perp}が存在する。よって(\bm{x},\bm{y})=(\bm{y},\bm{x})=0なので，\bm{y} \in \bm{W}^{\perp}に対し，\bm{x} \in (\bm{W}^{\perp})^{\perp}である。$\\
+よって$\bm{x} \in W \Longrightarrow \bm{x} \in  (\bm{W}^{\perp})^{\perp}が言えたので，\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}である。$\\
+また定理[4.7]から
+\begin{eqnarray*}
+& \dim \bm{W} +\dim \bm{W}^{\perp} =\dim (\bm{W} +\bm{W}^{\perp} )+\dim (\bm{W} \cap \bm{W}^{\perp} ) \\
+& \dim \bm{W} +\dim \bm{W}^{\perp} =n
+\end{eqnarray*}
+$定理6.4から\mathbb{R}^nの計量空間\bm{V}は\bm{W}\dot{+}\bm{W}^{\perp}と表されること，[4.8]から，この直和の共通部分は\{ \bm{o} \}のみであることを用いた。$\\
+また，同様に
+\begin{eqnarray*}
+\dim \bm{W}^{\perp} +\dim (\bm{W}^{\perp})^{\perp} =n
+\end{eqnarray*}
+でもあるので
+\begin{eqnarray*}
+\dim \bm{W} =\dim (\bm{W}^{\perp})^{\perp}
+\end{eqnarray*}
+よって$\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}と上の等式から，\bm{W} =  (\bm{W}^{\perp})^{\perp}$である。
+%
+%
+%
+\newpage
+%
+%
+%
+\subsection{p127-130}
+\noindent
+問１
+\noindent
+\begin{eqnarray*}
+\bm{a}_1=
+\begin{pmatrix}
+1 \\
+2 \\
+0 \\
+4 \\
+\end{pmatrix}
+,
+\bm{a}_2=
+\begin{pmatrix}
+-1 \\
+1 \\
+3 \\
+-3 \\
+\end{pmatrix}
+,
+\bm{a}_3=
+\begin{pmatrix}
+0 \\
+1 \\
+-5 \\
+-2\\
+\end{pmatrix}
+,
+\bm{a}_4=
+\begin{pmatrix}
+-1 \\
+-9 \\
+-1 \\
+-4 \\
+\end{pmatrix}
+\end{eqnarray*}
+$とする。\bm{a}_1, \bm{a}_2 の張る\mathbb{R}^4の部分空間\bm{W}_1 とし，\bm{a}_3, \bm{a}_4 の張る空間を\bm{W}_2 とするとき，共通部分\bm{W}_1 \cap \bm{W}_2 の次元および基底を求めよ。$\\ \\
+\textsl{Hint}：最も基本的な問題の１つで，共通部分を求めるとき，この場合は$s,t,u,v \in \mathbb{R}として，s\bm{a}_1+t\bm{a}_2=u\bm{a}_3+v\bm{a}_4 とおけば，この式を満たすs,t,u,vがどういうものなのかが必然と分かってくる。なお，問題にされていないが和空間の基底を求める場合は，\bm{a}_1,\bm{a}_2,\bm{a}_3,\bm{a}_4から線型独立になるようなベクトルの組を求めればいい。$\\
+\dotfill \\
+$s,t,u,v \in \mathbb{R}とすると$
+\begin{eqnarray*}
+s\bm{a}_1+t\bm{a}_2=u\bm{a}_3+v\bm{a}_4
+\end{eqnarray*}
+$とおけば，s,t,u,vの関係が導ける。この解空間は$
+\begin{eqnarray*}
+\begin{pmatrix}
+1 & -1 & 0 & 1 \\
+2 & 1 & -1 & 9 \\
+0 & 3 & 5 & 1 \\
+4 & -3 & 2 & 4 \\
+\end{pmatrix}
+\begin{pmatrix}
+s \\
+t \\
+u \\
+v \\
+\end{pmatrix}
+=\bm{o} \\
+%%%
+\begin{pmatrix}
+1 & 0 & 0 & 3 \\
+0 & 1 & 0 & 2 \\
+0 & 0 & 1 & -1 \\
+0 & 0 & 0 & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+s \\
+t \\
+u \\
+v \\
+\end{pmatrix}
+=\bm{o} \\
+%%%
+\begin{pmatrix}
+s \\
+t \\
+u \\
+v \\
+\end{pmatrix}
+=a
+\begin{pmatrix}
+-3 \\
+-2 \\
+1 \\
+1 \\
+\end{pmatrix}
+\end{eqnarray*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+問２
+\noindent
+\begin{eqnarray*}
+& \bm{W}_1=
+\left\{
+\bm{x}=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+\end{pmatrix}
+\middle|~
+\begin{matrix}
+x_1+2x_2+~~x_3+3x_4=0 \\
+x_1+3x_2+2x_3~~~~~~~~=0 \\
+\end{matrix}
+\right\} \\ \\
+& \bm{W}_2=
+\left\{
+\bm{x}=
+\begin{pmatrix}
+x_1 \\
+x_2 \\
+x_3 \\
+x_4 \\
+\end{pmatrix}
+\middle|~
+\begin{matrix}
+~~2x_1~~~~~~~+x_3+2x_4=0 \\
+-2x_1-x_2-2x_3+x_4=0 \\
+\end{matrix}
+\right\}
+\end{eqnarray*}
+とするとき，$\bm{W}_1+\bm{W}_2 の次元および基底を求めよ。$
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問３：$Aが(l,m)型\mathbb{K}-行列であるとき，\bm{M}_{m,n}(\mathbb{K})から\bm{M}_{l,n}(\mathbb{K})への線型写像L_A:X \rightarrow AXの階数を求めよ。$
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問４：$Aが(l,m)型，Bが(m,n)型の行列であるとき，不等式$
+\begin{eqnarray*}
+r(A)+r(B)-m \leq r(AB) \leq \min (r(A),r(B))
+\end{eqnarray*}
+が成り立つことを証明せよ。
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問５：$(m,n)型行列A,Bに対し，不等式$
+\begin{eqnarray*}
+r(A+B) \leq r(A)+r(B)
+\end{eqnarray*}
+が成り立つことを証明せよ。
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問６：$Aが(m,n)型行列，Bが(n,m)型行列で，m<n とする。$\\
+　イ）$BAが正則でないことを示せ。$ \\
+　ロ）$ABが正則であるのはどんな場合か。$\\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問７：$\bm{M}_n(\mathbb{K})から\mathbb{K}への任意の線型写像Tは，あるn時\mathbb{K}-行列Aによって$
+\begin{eqnarray*}
+T(X)={\rm Tr} AX
+\end{eqnarray*}
+と表されることを示せ。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問８：$区間[-\pi ,\pi]における連続関数f(x)に対し，n次以下のフーリエ多項式$
+\begin{eqnarray*}
+g(x)=a_0+\sum^{n}_{k=1}(a_k \cos kx+b_k\sin kx)
+\end{eqnarray*}
+で
+\begin{eqnarray*}
+\| f-g \|^2=\int^{\pi}_{-\pi}|f(x)-g(x)|^2dx
+\end{eqnarray*}
+$を最小にするようなg(x)を求めよ。$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問９：$2次以下の実係数多項式空間\bm{P}_2(\mathbb{R})の線形変換TおよびSを$
+\begin{eqnarray*}
+& (Tf)(x)=\int^{1}_{-1}(x-t)^2f(t)dt~~（積分作用素） \\
+& (Sf)(x)=e^x\frac{d}{dx}(e^{-x}f(x))~~（微分作用素）
+\end{eqnarray*}
+$によって定義することができる。基底〈1,x,x^2〉に関するT,Sの行列を求めよ。$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問１０：$イ）区間(a,b)においてつねに正の値を取る連続関数p(x)があるとき，n次以下の実係数多項式空間\bm{P}_n(\bm{R})に新しい内積を$
+\begin{eqnarray*}
+(f,g)_p=\int^{b}_{a}p(x)f(x)g(x)dx
+\end{eqnarray*}
+によって定義することができるを示せ。\\
+\\
+ロ）$b=\infty であっても，p(x)=e^{-x}とすれば$
+\begin{eqnarray*}
+(f,g)_{e}=\int^{\infty}_{0}e^{-x}f(x)g(x)dx
+\end{eqnarray*}
+によって$\bm{P}_n(\bm{R})に内積が定義できることを示せ。$\\
+\\
+ハ）
+\begin{eqnarray*}
+L_k(x)=\frac{e^x}{k!}\frac{d^k}{dx^k}(e^{-x}x^k)=\sum^{k}_{i=0}(-1)^i ~_{k}{\rm C}_{i}\frac{x^k}{i!}
+\end{eqnarray*}
+と置けば，$〈L_0 ,L_1 ,\cdots ,L_n〉は，ロ）の内積に関して\bm{P}_n(\bm{R})の正規直交基底であることを証明せよ。（このL_k をk次の\textbf{ラゲル多項式}という。）$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問１１：$任意の正則行列Aは，ユニタリ行列Uと，上三角行列Tとの積として，A=UTと表されることを示せ。$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\noindent
+問１２：$\mathbb{K}上の線型空間\bm{V}から\mathbb{K}への線型写像を\bm{V}上の\textbf{線型形式}あるいは\textbf{線型汎関数}と言う。\bm{V}上の線型形式全体の集合を\bm{V}^{*}とすれば，\bm{V}^{*}は\mathbb{K}上の線型空間である。ただし，\bm{f},\bm{g} \in \bm{V}^{*}に対し$
+\begin{eqnarray*}
+& (\bm{f}+\bm{g})(\bm{x})=\bm{f}(\bm{x})+\bm{g}(\bm{x}) \\
+& (c\bm{f})(\bm{x})=c\bm{f}(\bm{x})
+\end{eqnarray*}
+と置く。$\bm{V}^{*}を\bm{V}の\textbf{双体空間}と言う。$\\
+\\
+イ）$\bm{V}の基底E=〈\bm{e}_1 ,\bm{e}_2 ,\cdots ,\bm{e}_n〉に対し，\bm{V}^{*}の元\bm{f}_iを，\bm{f}_i(\bm{e}_j)=\delta_{ij}で定義すれば，E^{*}=〈\bm{f}_1 ,\bm{f}_2 ,\cdots ,\bm{f}_n〉は\bm{V}^{*}の基底となることを示せ。（このE^{*}をEの\textbf{双体基底}という）$\\
+\\
+ロ）$\bm{V}から\bm{W}への線型写像Tに対し，\bm{W}の双体空間\bm{W}^{*}から\bm{V}^{*}への線型写像T^{*}を$
+\begin{eqnarray*}
+(T^{*}\bm{f})(\bm{x})=\bm{f}(T\bm{x}),~~~~~\bm{x} \in \bm{V},~~\bm{f} \in \bm{W^{*}}
+\end{eqnarray*}
+$によって定義することができる。\bm{V},\bm{W}の基底E,Fに対し，\bm{V}^{*},\bm{W}^{*}の双体基底をE^{*},F^{*}とするとき，F^{*},E^{*}に関するT^{*}の行列は，E,Fに関するTの行列の転置行列であることを示せ。$\\
+\\
+ハ）$\bm{V}の元\bm{x}に対し，(\bm{V}^{*})^{*}の元\bm{x}'を，\bm{x}'(\bm{f})=\bm{f}(\bm{x}),\bm{f} \in \bm{V}^{*}によって定義されば，写像\bm{x} \rightarrow \bm{x}'は\bm{V}と(\bm{V}^{*})^{*}とのあいだの同型対応を与えることを示せ。$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+問１３：$\mathbb{K}上の線型空間\bm{V}とその部分空間\bm{W}があるとする。\bm{V}の二元\bm{x},\bm{y}に対し，\bm{x}-\bm{y} \in \bm{W}のとき，\bm{x}〜\bm{y}と定義すれば，〜は\bm{V}の同値関係である。\bm{V}の〜による商集合を\bm{V}/\bm{W}で表し，\bm{V}の元\bm{x}の含まれる類を[\bm{x}]で表す。$
+\\
+\\
+イ）$\bm{V}/\bm{W}の元[\bm{x}],[\bm{y}]に対し，和およびスカラー倍を，[\bm{x}]+[\bm{y}]=[\bm{x}+\bm{y}],c[\bm{x}]=[c\bm{x}]で定義することができること（すなわち，類の代表の取り方によらないこと）を示し，この演算によって\bm{V}/\bm{W}が\mathbb{K}上の線型空間になることを示せ。\bm{V}/\bm{W}を\bm{V}の\bm{W}による\textbf{商空間}と言う。$\\
+\\
+ロ）$\bm{W}の基底E_0 =〈\bm{e}_1 ,\bm{e}_2 ,\cdots ,\bm{e}_r 〉を含む\bm{V}の基底E=〈\bm{e}_1 ,\bm{e}_2 ,\cdots ,\bm{e}_r ,\bm{e}_{r+1} ,\cdots ,\bm{e}_n〉を取る。\widetilde{E}=〈[\bm{e}_{r+1}] , \cdots ,[\bm{e}_n]〉は\bm{V}/\bm{W}の基底であることを示せ。（したがって\dim \bm{V}/\bm{W}=\dim \bm{V}-\dim \bm{W}が成り立つ。）$\\
+\\
+　ハ）$Tが\bm{V}の線型変換で，\bm{W}がT-不変ならば，\bm{V}/\bm{W}の線型変換~\widetilde{T}を，\widetilde{T}[\bm{x}]=[T\bm{x}]によって定義できることを示せ。$\\
+\\
+　ニ）$このとき，Tの\bm{W}への制限T_{\bm{W}}のE_0に関する行列をA_0, \widetilde{T} の\widetilde{E}に関する行列を\widetilde{A}とすれば，TのEに関する行列は$
+\begin{eqnarray*}
+\begin{pmatrix}
+A_0 & * \\
+O & \widetilde{A} \\
+\end{pmatrix}
+\end{eqnarray*}
+の形に区分けされることを示せ。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第５章：固有値と固有ベクトル（解答）}
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第６章：単因子およびジョルダンの標準形（解答）}
+%
+%
+%
+\newpage
+%
+%
+%
+\section{第７章：ベクトルおよび行列の解析的取扱い（解答）}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
