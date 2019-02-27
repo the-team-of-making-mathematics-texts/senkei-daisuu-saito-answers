@@ -1,4 +1,4 @@
-# kaiseki-nyumon-sugiura-answers
+# 齋藤線型代数入門解答集
 
 ## 全ページまとめ PDF
 
