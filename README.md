@@ -1,1 +1,21 @@
 # kaiseki-nyumon-sugiura-answers
+
+## 全ページまとめ PDF
+
+[ダウンロード](https://s3-ap-northeast-1.amazonaws.com/math-texts/saitou-senkei/kaitou.pdf)
+
+## 問題単位の PDF
+
+### 1 章
+
+### 2 章
+
+### 3 章
+
+### 4 章
+
+### 5 章
+
+### 6 章
+
+### 7 章
