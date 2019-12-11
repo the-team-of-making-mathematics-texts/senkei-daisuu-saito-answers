@@ -2,12 +2,9 @@
 
 ## 全ページまとめ PDF
 
-[ダウンロード](https://s3-ap-northeast-1.amazonaws.com/math-texts/saitou-senkei/kaitou.pdf)
-
 ## 問題単位の PDF
 
 ### 1 章
-
 
 ### 2 章
 
