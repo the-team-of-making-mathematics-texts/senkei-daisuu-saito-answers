@@ -26,9 +26,160 @@
 %
 %
 \section{第１章：平面および空間のベクトル（解答）}
+%
+\subsection{p5}
+
+問1：
+
+\begin{leftbar}
+	\begin{proof}
+		線分PQの中点をMとする．このとき，
+		\begin{align*}
+		\overrightarrow{OM} & = \overrightarrow{OP} + \overrightarrow{PM} \\
+		& = \bm{a} + \frac{\bm{b}-\bm{a}}{2} \\
+		& = \frac{\bm{a}+\bm{b}}{2}
+		\end{align*}
+		である．
+	\end{proof}
+\end{leftbar}
+
+問2：
+\begin{leftbar}
+	\begin{proof}
+		三角形PQRの重心をG，PQの中点をNとする．Gは線分RNを$2：1$に内分する点なので，
+		\begin{align*}
+			\overrightarrow{OG} &= \overrightarrow{OR} + \frac{2}{3} \overrightarrow{RN} \\
+			& = \bm{c}+ \frac{2}{3} \left(\frac{\bm{a}+\bm{b}}{2}-\bm{c} \right)\\
+			& = \frac{\bm{a}+\bm{b}+\bm{c}}{3}
+		\end{align*}
+		である．
+	\end{proof}
+\end{leftbar}
+
+\newpage
+
+\subsection{p7}
+
+問： 
+\begin{leftbar}
+	[1.4]の結果を利用する．\par 
+	求める三角形の面積を$S$，$\bm{a}=\overrightarrow{P_1 P_2}=(x_2-x_1，y_2-y_1，z_2-z_1)$，$\bm{b}=\overrightarrow{P_1 P_3}=(x_3-x_1，y_3-y_1，z_3-z_1)$とおく，
+	このとき，
+	\begin{align*}
+		S & = \frac{1}{2} \sqrt{\|\overrightarrow{P_1 P_2}\|^2 \|\overrightarrow{P_1 P_3}\|^2 - \overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_3}} \\
+		  & = \frac{1}{2} \sqrt{\|\bm{a}\|^2 \|\bm{b}\|^2 - (\bm{a}\cdot \bm{b})^2 } \\
+		  & = \frac{1}{2} \{[(x_2 - x_1)+(y_2-y_1)+ (z_2 - z_1)][(x_3 - x_1)+(y_3-y_1)+ (z_3 - z_1)]\\
+		  & \qquad - [(x_2-x_1)(x_3-x_1)+(y_2 -y_1)(y_3-y_1)+(z_2-z_1)(z_3-z_1)]^2\}^{\frac{1}{2}}
+	\end{align*}
+	である，
+\end{leftbar}
+	
+\newpage
+
 \subsection{p8}
-%
-%
+
+問1．
+
+\begin{leftbar}
+	(1) \quad 与えられた直線を$\ell$とする．$\ell$の方程式に$x=-2$を代入すると，$y=2$となるため，$\ell$は点$(-2，2)$を通る．
+	また，$\ell$の法線ベクトルのひとつは，
+	$
+	\left(
+		\begin{array}{c}
+			2 \\
+			3
+		\end{array}
+	\right)
+		$なので，$\ell$の方向ベクトルのひとつは，
+		$
+		\left(
+		\begin{array}{c}
+			-3 \\
+			2
+		\end{array}
+		\right)
+		$である．よって，$\ell$のベクトル表示は，
+		$
+		\left(
+		\begin{array}{c}
+			x \\
+			y
+		\end{array}
+		\right)
+		= \left(
+		\begin{array}{c}
+		-2 \\
+		2
+		\end{array}
+		\right)
+		+t \left(
+			\begin{array}{c}
+				-3 \\
+				2
+			\end{array}
+			\right)
+			~(-\infty < t < \infty)$である．\\
+
+			(2) \quad 与えられた直線を$\ell'$とする．$\ell '$の方向ベクトルのひとつは，$
+			\left (
+				\begin{array}{c}
+					0 \\
+					1
+				\end{array}
+			\right)
+			$である．また，$\ell '$は点$(3，0)$を通るので，そのベクトル表示は，
+			$
+			\left(
+				\begin{array}{c}
+					x \\
+					y
+				\end{array}
+			\right)
+			= \left(
+				\begin{array}{c}
+				3 \\
+				0
+				\end{array}
+			\right)
+			+t \left(
+				\begin{array}{c}
+					0 \\
+					1
+					\end{array}
+				\right) ~(-\infty < t < \infty)
+				$となる．
+		\end{leftbar}
+
+		\newpage
+
+		問2．
+		
+		\begin{leftbar}
+			(1) \par
+			与えられたベクトル表示から．
+			\begin{align*}
+				\begin{cases}
+					&x=1+2t \\
+					&y=-1+t
+				\end{cases}
+			\end{align*}
+			であるから，
+			\begin{align*}
+				\begin{cases}
+					&t=\frac{x-1}{2} \\
+					&t=y+1
+				\end{cases}
+			\end{align*}
+			である．これから$t$を消去すると，
+			\begin{gather*}
+				\frac{x-1}{2} = y+1 \\
+				\therefore \quad x-2y-3 =0
+			\end{gather*}
+			である．\\
+
+			(2) \par 
+			点$(-1，-2)$を通り，$x$軸に平行な直線を表すから，$y=-2$が求める直線の方程式である．
+		\end{leftbar}
 %
 \newpage
 %
@@ -36,7 +187,86 @@
 %
 \subsection{p10}
 %
+\subsection{p10}
 %
+問1：
+\begin{leftbar}
+\begin{align*}
+    \begin{cases}
+        x+2y+3z=1 \\
+        3x+2y+z=-1
+    \end{cases}
+\end{align*}
+から，
+\begin{gather*}
+    -2x+2z=2 \\
+    \therefore \quad -x+z=1
+\end{gather*}
+である．このとき，$
+\left(
+    \begin{array}{c}
+        x \\
+        z
+    \end{array}
+\right) =
+\left(
+    \begin{array}{c}
+        1 \\
+        2
+    \end{array}
+\right)，
+\left(
+    \begin{array}{c}
+        2 \\
+        3
+    \end{array}
+\right)
+$はこれを満たす．このときの$y$の値を計算すると，ぞれぞれ$-3$，$-5$なので，結局，与えられた直線は2点$(1，-3，2)，(2，-5，3)$を通る．
+すなわち，この直線の方向ベクトルは\[
+    \left(
+\begin{array}{c}
+    2 \\
+    -5 \\
+    3
+\end{array}
+    \right)
+    -
+    \left(
+        \begin{array}{c}
+            1 \\
+            -3 \\
+            2
+        \end{array}
+            \right)
+            =
+            \left(
+                \begin{array}{c}
+                    1 \\
+                    -2 \\
+                    1
+                \end{array}
+                    \right)
+                    \]
+である．したがって求めるベクトル表示は，直線上の任意の位置ベクトルを$\bm{x}$とすると，
+\[
+    \bm{x}= \left(
+        \begin{array}{c}
+            1 \\
+            -3 \\
+            2
+        \end{array}
+            \right)
+            +t
+            \left(
+            \begin{array}{c}
+                1 \\
+                -2 \\
+                1
+            \end{array}
+            \right)
+            \]
+            と表せる．
+\end{leftbar}
 %
 \newpage
 %
@@ -108,7 +338,7 @@ y & y_1 & y_2
 \begin{eqnarray}
 & & y(x_2 -x_1) + x ( y_1 - y_2 ) +x_1 y_2 - x_2 y_1=0 \\
 \label{2}
-& \Leftrightarrow & y=  \left( \frac{y_2 - y_1}{x_2 -x_1} \right)x  + \frac{x_2 y_1 - x_1 y_2 }{x_2 -x_1}
+& \therefore &y=  \left( \frac{y_2 - y_1}{x_2 -x_1} \right)x  + \frac{x_2 y_1 - x_1 y_2 }{x_2 -x_1}
 \end{eqnarray}
 \eqref{2}に$x=x_1$を代入すると，
 \begin{eqnarray}
@@ -134,16 +364,16 @@ x(y_1 - y_2) = -x_1 y_2 + x_2 y_1
 \subsection{p34}
 問1\\
 \noindent
-$\textsl{Hint}：単純な行列の和・積に関する命題は，両辺の(i,j)成分を比較する方法が１つある。今回はそれを使う命題であるが，(i,j)成分を計算する際，左辺は積の形になっているので，どうしても\sum を使わざるを得ない。その時は公式に当てはめるなど頭を使わない方法ではなく，丁寧に成分ごとで1つ1つ計算していき，最後に\sum でまとめて証明として書き出せばいい。$
+$\textsl{Hint}：単純な行列の和・積に関する命題は，両辺の(i,j)成分を比較する方法が１つある．今回はそれを使う命題であるが，(i,j)成分を計算する際，左辺は積の形になっているので，どうしても\sum を使わざるを得ない．その時は公式に当てはめるなど頭を使わない方法ではなく，丁寧に成分ごとで1つ1つ計算していき，最後に\sum でまとめて証明として書き出せばいい．$
 \begin{leftbar}
 \begin{proof}
 ~\\
-後半二つの主張は明らか。また，二つ目の主張は一つ目の主張と同様にして示すことができるので，一つ目のみ示すことにする。\\
-$A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列とする。示したい式の両辺がともに定義され、ともに$k \times m行列であることはよい。行列B+Cの(q,r)成分はb_{qr}+c_{qr}であるから、左辺の(p,r)成分は、$
+後半二つの主張は明らか．また，二つ目の主張は一つ目の主張と同様にして示すことができるので，一つ目のみ示すことにする．\\
+$A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列とする．示したい式の両辺がともに定義され，ともに$k \times m行列であることはよい．行列B+Cの(q,r)成分はb_{qr}+c_{qr}であるから，左辺の(p,r)成分は，$
 \begin{eqnarray*}
 \sum_{q=1}^{l}a_{pq}\left(b_{qr}+c_{qr}\right)=\sum_{q=1}^{l}a_{pq}b_{qr}+\sum_{q=1}^{l}a_{pq}c_{qr}
 \end{eqnarray*}
-と書ける。この等号の右辺は$ABの(p,r)成分とACの(p,r)成分の和である。$これより，主張が示された。
+と書ける．この等号の右辺は$ABの(p,r)成分とACの(p,r)成分の和である．$これより，主張が示された．
 \end{proof}
 \end{leftbar}
 %
@@ -207,19 +437,19 @@ $A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列と
 \begin{leftbar}
 \begin{proof}
 ~\\
-イ）$A_k=Eなるkが存在したとする。k = 1 ならば明らか。$\\
-$k>2ならば、A^k=A·A^{k-1}=A^{k-1}· A = E となるので、A^{k-1}がAの逆行列となるので，Aは正則。$\\
+イ）$A_k=Eなるkが存在したとする．k = 1 ならば明らか．$\\
+$k>2ならば，A^k=A·A^{k-1}=A^{k-1}· A = E となるので，A^{k-1}がAの逆行列となるので，Aは正則．$\\
 \\
-$ロ)Aが正則であるとする。A^2=Aの両辺にA^{-1}をかけると，A=Eとなるが，これは仮定に反する。$\\
+$ロ)Aが正則であるとする．A^2=Aの両辺にA^{-1}をかけると，A=Eとなるが，これは仮定に反する．$\\
 \\
-$ハ)A^k=Oとなる k が存在したとして、A が正則であるとする。この等式の両辺に (A^{−1})^kをかけるとE=Oとなるが，これは明らかに矛盾。$\\
+$ハ)A^k=Oとなる k が存在したとして，A が正則であるとする．この等式の両辺に (A^{−1})^kをかけるとE=Oとなるが，これは明らかに矛盾．$\\
 \\
-$ニ)E−A に関してのみ示す。他方も同様にして示せる。A^{k}=Oとなるkが存在したとする。$\\
+$ニ)E−A に関してのみ示す．他方も同様にして示せる．A^{k}=Oとなるkが存在したとする．$\\
 $すると$
 \begin{eqnarray*}
 (E − A)(E+A+ \cdots +A^{k−1})=(E+A+ \cdots + A^{k−1})(E−A)=E−A^k=E
 \end{eqnarray*}
-$となることから主張が従う。$
+$となることから主張が従う．$
 \end{proof}
 \end{leftbar}
 %
@@ -264,8 +494,7 @@ w + 2y & x + 2z \\
 \end{pmatrix}
 \end{align}
 となり，
-\begin{align}
-&
+\begin{gather*}
 \begin{pmatrix}
 w + 2y & x +2z \\
 2w + 4y & 2x + 4z
@@ -273,17 +502,18 @@ w + 2y & x +2z \\
 =
 \begin{pmatrix}
 1 & 0 \\
-0 & 1 \\
+0 & 1 
 \end{pmatrix}
-\\
-&\Leftrightarrow
+\end{gather*}
+から，
+\begin{gather*}
 \begin{cases}
 w+2y = 1 \\
 x+2z = 0 \\
 2w+4y =0 \\
 2x+4z=1
 \end{cases}
-\end{align}
+\end{gather*}
 簡単な計算により，この連立方程式を満たす$w，x，y，z \in \mathbb{C}$は存在しない．これで前半の主張が示された．\par
 後半について，$h，i，j，k \in \mathbb{C}$として，$Y=
 \begin{pmatrix}
@@ -310,8 +540,7 @@ j + 2k & 2j +4k
 \end{pmatrix}
 \end{align}
 となる．
-\begin{align}
-&
+\begin{gather*}
 \begin{pmatrix}
 h+2 i & 2h + 4i \\
 j + 2k & 2j +4k
@@ -321,15 +550,16 @@ j + 2k & 2j +4k
 1 & 0 \\
 0 & 1 
 \end{pmatrix}
-\\
-&\Leftrightarrow 
+\end{gather*}
+から，
+\begin{gather*}
 \begin{cases}
 h+2 i =1 \\
 2h + 4i =0 \\
 j + 2k =0 \\
 2j +4k =1
 \end{cases}
-\end{align}
+\end{gather*}
 簡単な計算により，この連立方程式を満たす$h，i，j，k \in \mathbb{C}$は存在しない．これで後半の主張も示された．
 \end{proof}
 \end{itembox}
@@ -379,7 +609,7 @@ $Pをn次正方行列で$
 ^t PP=E\\
 P+Eは正則
 \end{eqnarray*}
-$を満たしているとする。$\\
+$を満たしているとする．$\\
 1.$(P − E)(P + E) = (P + E)(P − E)右辺と左辺をそれぞれ計算する.$
 \begin{eqnarray*}
 & (右辺) = P^2+P−P−E=P^2−E\\
@@ -405,17 +635,17 @@ $仮定P+Eの正則性より，(1)の両辺にP+Eの逆行列を左, 右から�
 \begin{eqnarray*}
 ^tA = −(P + E)^{−1}=(P − E) = −(P − E)(P + E)^{−1}= −A
 \end{eqnarray*}
-となる。\\
+となる．\\
 \\
 3.$E − A は正則$\\
-$\dfrac{1}{2}(P + E) が逆行列であることを示す。$
+$\dfrac{1}{2}(P + E) が逆行列であることを示す．$
 \begin{eqnarray*}
 (E−A)(P+E)&=&P+E−A(P+E)\\
 &=&P+E+(−(P − E)(P + E)^{−1})(P + E)\\
 &=&P+E−P+E \\
 &=&2E
 \end{eqnarray*}
-より, 題意は示される。
+より, 題意は示される．
 \end{leftbar}
 %
 %
@@ -458,19 +688,19 @@ $\dfrac{1}{2}(P + E) が逆行列であることを示す。$
 \begin{leftbar}
 \begin{proof}
 必要性・十分性をそれぞれ証明する.\\ \\
-1.$Aが正則かつA^{−1}が整数行列であると仮定し，\det A=\pm 1であることを示す。$\\
-$Aは整数行列であり，その行列式は，各要素の和と積でかけているから\det A \in \mathbb{Z}である。同様にして\det (A^{−1}) \in \mathbb{Z}である。逆行列の行列式は，$
+1.$Aが正則かつA^{−1}が整数行列であると仮定し，\det A=\pm 1であることを示す．$\\
+$Aは整数行列であり，その行列式は，各要素の和と積でかけているから\det A \in \mathbb{Z}である．同様にして\det (A^{−1}) \in \mathbb{Z}である．逆行列の行列式は，$
 \begin{eqnarray*}
 \det (A^{−1})=\frac{1}{\det A}
 \end{eqnarray*}
-$が成り立つ.。つまり，\det A，1/\det A \in \mathbb{Z} である。これを満たす整数は\pm 1だけである。$\\
+$が成り立つ.．つまり，\det A，1/\det A \in \mathbb{Z} である．これを満たす整数は\pm 1だけである．$\\
 \\
-2.$\det A=\pm 1であることを仮定し，Aが正則かつA^{−1}が整数行列であることを示す。$\\
-$\det A \neq 0 より A の正則性がわかる。また，Aの余因子行列を\tilde{A}とすると，余因子はAの各要素の和と積によって表現される。つまり，余因子は整数であるから\tilde{A}は整数行列である. また$
+2.$\det A=\pm 1であることを仮定し，Aが正則かつA^{−1}が整数行列であることを示す．$\\
+$\det A \neq 0 より A の正則性がわかる．また，Aの余因子行列を\tilde{A}とすると，余因子はAの各要素の和と積によって表現される．つまり，余因子は整数であるから\tilde{A}は整数行列である. また$
 \begin{eqnarray*}
 A^{−1}=\frac{1}{\det A}\tilde{A}
 \end{eqnarray*}
-$となる。\det A=\pm 1であり， 余因子は整数であるから，A^{−1}は整数行列である。$
+$となる．\det A=\pm 1であり， 余因子は整数であるから，A^{−1}は整数行列である．$
 \end{proof}
 \end{leftbar}
 %
@@ -484,14 +714,14 @@ $となる。\det A=\pm 1であり， 余因子は整数であるから，A^{−
 \subsection{p94}
 問.\\
 \noindent
-\textsl{Hint}：集合$A$の元$a,b,c$に対して，同値関係であることはP93の定義から反射律・対称律・推移律が成立することなので，これを示せばよい。商集合の元の個数は商集合の定義に振り返る。\\ \\
-まず，同値関係であることを示す。$A,B \in \bm{M_{m,n}}，P,Q,R,Sを正則行列とする。$\\
+\textsl{Hint}：集合$A$の元$a,b,c$に対して，同値関係であることはP93の定義から反射律・対称律・推移律が成立することなので，これを示せばよい．商集合の元の個数は商集合の定義に振り返る．\\ \\
+まず，同値関係であることを示す．$A,B \in \bm{M_{m,n}}，P,Q,R,Sを正則行列とする．$\\
 基本行列の積は正則行列で表されることを用いて\\
 ・$E_{m}AE_{n}=A~~（反射律）$ \\
 ・$PAQ=Bならば，A=P^{-1}BQ^{-1}~~（対称律）$\\
 ・$PAQ=B，RBS=Cならば，PAQ=R^{-1}CS^{-1} \Longleftrightarrow (PR)A(QS)=C$~~（推移律）\\
-より同値関係である。\\
-また，同値関係ごとに類別した類は正則行列を掛けることにより，ある標準形$F_{m,n}(r)$に直すことができる$(m,n)$型行列全体である。これを$C(r)$とおく。よって商集合はこの類全体の集合なので，$C(0)，C(1)，\cdots ，C({\rm min}(m,n))$である。よって元の個数は$1+{\rm min}(m,n)$個である。
+より同値関係である．\\
+また，同値関係ごとに類別した類は正則行列を掛けることにより，ある標準形$F_{m,n}(r)$に直すことができる$(m,n)$型行列全体である．これを$C(r)$とおく．よって商集合はこの類全体の集合なので，$C(0)，C(1)，\cdots ，C({\rm min}(m,n))$である．よって元の個数は$1+{\rm min}(m,n)$個である．
 %
 %
 %
@@ -502,7 +732,7 @@ $となる。\det A=\pm 1であり， 余因子は整数であるから，A^{−
 \subsection{p106}
 \noindent
 問1：\\
-\textsl{Hint}：単なる計算問題なので手順通り求めればよいが，求めるときはp106の(3)式が有用である。\\ \\
+\textsl{Hint}：単なる計算問題なので手順通り求めればよいが，求めるときはp106の(3)式が有用である．\\ \\
 求める$E→F$の取り替え行列を$P=(p_{ij})$とし，
 \begin{eqnarray*}
 \bm{e}_1=
@@ -547,7 +777,7 @@ $となる。\det A=\pm 1であり， 余因子は整数であるから，A^{−
 6
 \end{pmatrix}
 \end{eqnarray*}
-とする。~~p106の(3)式から
+とする．~~p106の(3)式から
 \begin{eqnarray*}
 \bm{f}_i=\sum^{3}_{j=1}p_{ji}\bm{e}_{j}=p_{1i}\bm{e}_1+p_{2i}\bm{e}_2+p_{3i}\bm{e}_3
 \end{eqnarray*}
@@ -566,7 +796,7 @@ P=
 -1/2 & 3 & -1/2
 \end{pmatrix}
 \end{eqnarray*}
-である。またp106の(3)式を簡単な計算をすることにより
+である．またp106の(3)式を簡単な計算をすることにより
 \begin{eqnarray*}
 (\bm{f}_1,\bm{f}_2,\cdots ,\bm{f}_n)=(\bm{e}_1,\bm{e}_2,\cdots ,\bm{e}_n)P
 \end{eqnarray*}
@@ -600,12 +830,12 @@ P=
 \end{pmatrix}
 ^{-1}
 \end{eqnarray*}
-から求めることもできる。\\ \\
+から求めることもできる．\\ \\
 
 \newpage
 
 問２： \\
-\textsl{Hint}：問１と同様に計算すればよい。本解答では問１の最後で紹介した計算方法では計算できないことに注意したい。\\ \\
+\textsl{Hint}：問１と同様に計算すればよい．本解答では問１の最後で紹介した計算方法では計算できないことに注意したい．\\ \\
 p106の(3)式から
 \begin{eqnarray*}
 \bm{f}_i=\sum^{2}_{j=1}p_{ji}\bm{e}_{j}=p_{1i}\bm{e}_1+p_{2i}\bm{e}_2
@@ -663,7 +893,7 @@ P=
 1 & 2 \\
 \end{pmatrix}
 \end{eqnarray*}
-である。
+である．
 %
 %
 %
@@ -674,11 +904,11 @@ P=
 \subsection{p107-108}
 \noindent
 問１：\\
-\textsl{Hint}：部分空間の定義P107の(1)式から部分空間の判定を行う。次元は単に基底の個数を数えればよい。部分空間でないときは単に反例を示せばいい。\\
+\textsl{Hint}：部分空間の定義P107の(1)式から部分空間の判定を行う．次元は単に基底の個数を数えればよい．部分空間でないときは単に反例を示せばいい．\\
 %%%
 \dotfill \\
 %%%
-イ）この$\bm{x}全体は$部分空間をなす。実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする。
+イ）この$\bm{x}全体は$部分空間をなす．実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする．
 \begin{eqnarray*}
 \bm{x}+\bm{y}=
 \begin{pmatrix}
@@ -697,7 +927,7 @@ ax_n
 \end{pmatrix}
 \end{eqnarray*}
 条件から$(x_1+y_1)+(x_2+y_2)+\cdots (x_n+y_n)=(x_1+x_2+\cdots +x_n)+(y_1+y_2+\cdots +y_n)=0$\\
-$ax_1+ax_2+ \cdots +ax_n=a(x_1+x_2+\cdots x_n)=0であるから，\bm{x}+\bm{y} \in W,~a\bm{x} \in W$である。よって，この空間は部分空間をなす。また次元は
+$ax_1+ax_2+ \cdots +ax_n=a(x_1+x_2+\cdots x_n)=0であるから，\bm{x}+\bm{y} \in W,~a\bm{x} \in W$である．よって，この空間は部分空間をなす．また次元は
 \begin{eqnarray*}
 \bm{x}=
 \begin{pmatrix}
@@ -741,11 +971,11 @@ x_1
 -1\\
 \end{pmatrix}
 \end{eqnarray*}
-により，明らかに$n-1$である。\\
+により，明らかに$n-1$である．\\
 %%%
 \dotfill \\
 %%%
-ロ）この$\bm{x}全体は部分空間をなす。$実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする。
+ロ）この$\bm{x}全体は部分空間をなす．$実際，この条件を満たす空間を$Wとし，\bm{x,y} \in W$とする．
 \begin{eqnarray*}
 \bm{x}+\bm{y}=
 \begin{pmatrix}
@@ -769,8 +999,8 @@ ax_{p+1} \\
 ax_n
 \end{pmatrix}
 \end{eqnarray*}
-条件から$x_{p+1}+y_{p+1}=x_{p+2}+y_{p+2}=\cdots =x_{n}+y_{n}=0，ax_{p+1}=ax_{p+2}=\cdots =ax_n=0である。$\\
-よって$\bm{x}+\bm{y} \in W, a\bm{x} \in W$であるから，この空間は部分空間をなす。また次元は
+条件から$x_{p+1}+y_{p+1}=x_{p+2}+y_{p+2}=\cdots =x_{n}+y_{n}=0，ax_{p+1}=ax_{p+2}=\cdots =ax_n=0である．$\\
+よって$\bm{x}+\bm{y} \in W, a\bm{x} \in W$であるから，この空間は部分空間をなす．また次元は
 \begin{eqnarray*}
 \bm{x}=
 \begin{pmatrix}
@@ -823,11 +1053,11 @@ x_{p} \\
 0 \\
 \end{pmatrix}
 \end{eqnarray*}
-により$p$である。\\
+により$p$である．\\
 %%%
 \dotfill \\
 %%%
-ハ）この$\bm{x}全体$は部分空間をなさない。実際
+ハ）この$\bm{x}全体$は部分空間をなさない．実際
 \begin{eqnarray*}
 \bm{x}=
 \begin{pmatrix}
@@ -858,16 +1088,16 @@ x_{p} \\
 0
 \end{pmatrix}
 \end{eqnarray*}
-条件に当てはめると$1^2+1^2=2 \neq 1$より，加法に関して（また示していないがスカラー倍に関しても）閉じていないので$\bm{x}+\bm{y} \not\in W$である。\\
+条件に当てはめると$1^2+1^2=2 \neq 1$より，加法に関して（また示していないがスカラー倍に関しても）閉じていないので$\bm{x}+\bm{y} \not\in W$である．\\
 %%%
 \dotfill \\
 %%%
-ニ）この$\bm{x}全体$は部分空間をなす。$実際，この条件を満たす空間をW，c \in \bm{K}とし，\bm{x,y} \in W$とする。\\
+ニ）この$\bm{x}全体$は部分空間をなす．$実際，この条件を満たす空間をW，c \in \bm{K}とし，\bm{x,y} \in W$とする．\\
 内積の定義から
 \begin{eqnarray*}
 (\bm{a},\bm{x}+\bm{y})=(\bm{a},\bm{x})+(\bm{a},\bm{y})=0 ,~~~~~(\bm{a},c\bm{x})=c(\bm{a},\bm{x})=0
 \end{eqnarray*}
-よって$\bm{x}+\bm{y} \in W, c\bm{x} \in W$から部分空間をなす。次元を求めるため，$\bm{a}=(a_{i})$とおく。
+よって$\bm{x}+\bm{y} \in W, c\bm{x} \in W$から部分空間をなす．次元を求めるため，$\bm{a}=(a_{i})$とおく．
 \begin{itemize}
 \item $\bm{a} \neq \bm{o}のとき$
 \begin{eqnarray*}
@@ -877,7 +1107,7 @@ x_{p} \\
 \begin{eqnarray*}
 x_n=-\frac{a_1}{a_n}x_{1}-\frac{a_2}{a_n}x_{2}- \cdots -\frac{a_{n-1}}{a_n}x_{n-1}
 \end{eqnarray*}
-となり，このときの部分空間$Wの次元はn-1$である。（明らかなので，詳細は略）\\
+となり，このときの部分空間$Wの次元はn-1$である．（明らかなので，詳細は略）\\
 また$a_n=0$のとき
 \begin{eqnarray*}
 (\bm{a},\bm{x})=a_1x_1+a_2x_2+ \cdots +a_{n-1}x_{n-1}=0
@@ -886,8 +1116,8 @@ x_n=-\frac{a_1}{a_n}x_{1}-\frac{a_2}{a_n}x_{2}- \cdots -\frac{a_{n-1}}{a_n}x_{n-
 \begin{eqnarray*}
 x_{n-1}=-\frac{a_1}{a_{n-1}}x_{1}-\frac{a_2}{a_{n-1}}x_{2}- \cdots -\frac{a_{n-2}}{a_{n-1}}x_{n-2}
 \end{eqnarray*}
-となる。このときの部分空間$Wの次元はn-1である。$よって帰納的に$\bm{a}$に0でない成分が存在するとき，次元は$n-1$である。\\
-\item $\bm{a} \neq \bm{o}のとき，(\bm{a},\bm{x})は\bm{x}の成分に依らず0となる。よって次元はnである。$
+となる．このときの部分空間$Wの次元はn-1である．$よって帰納的に$\bm{a}$に0でない成分が存在するとき，次元は$n-1$である．\\
+\item $\bm{a} \neq \bm{o}のとき，(\bm{a},\bm{x})は\bm{x}の成分に依らず0となる．よって次元はnである．$
 \end{itemize}
 よって次元は
 \begin{eqnarray*}
@@ -899,18 +1129,18 @@ n-1~~(\bm{a} \neq \bm{o}) \\
 \end{array}
 \right.
 \end{eqnarray*}
-となる。\\
+となる．\\
 %%%
 \dotfill \\
 \newpage
 \noindent
 %
 問２：\\
-\textsl{Hint}：直感で部分空間とならない集合が分からない場合は，具体例を何個か上げて反例が無いか調べる。大丈夫そうなら実際に証明してみる方向でいいだろう。\\
+\textsl{Hint}：直感で部分空間とならない集合が分からない場合は，具体例を何個か上げて反例が無いか調べる．大丈夫そうなら実際に証明してみる方向でいいだろう．\\
 %%%
 \dotfill \\
 %%%
-イ）これは部分空間をなさない。実際，非正則行列全体の集合を$Wとし，A,B \in W$を
+イ）これは部分空間をなさない．実際，非正則行列全体の集合を$Wとし，A,B \in W$を
 $
 A=
 \begin{pmatrix}
@@ -932,11 +1162,11 @@ A+B=
 0 & 1 \\
 \end{pmatrix}
 \end{eqnarray*}
-これは正則行列であるから，$A+B \not\in W$である。よって加法に関して閉じていないので部分空間をなさない。\\
+これは正則行列であるから，$A+B \not\in W$である．よって加法に関して閉じていないので部分空間をなさない．\\
 %%%
 \dotfill \\
 %%%
-ロ）これは部分空間をなす。実際，$AX=XBとなるX全体の集合をWとし，X,Y \in W$とすると
+ロ）これは部分空間をなす．実際，$AX=XBとなるX全体の集合をWとし，X,Y \in W$とすると
 \begin{eqnarray*}
 AX=XB \\
 AY=YB
@@ -946,11 +1176,11 @@ AY=YB
 A(X+Y)=(X+Y)B \\
 A(aX)=(aX)B
 \end{eqnarray*}
-$X+Y,~aXを1つの行列として見ればX+Y \in W,~aX \in Wである。よって部分空間をなす。$\\
+$X+Y,~aXを1つの行列として見ればX+Y \in W,~aX \in Wである．よって部分空間をなす．$\\
 %%%
 \dotfill \\
 %%%
-ハ）これは部分空間をなさない。実際，冪零行列全体の集合を$Wとし，A,B \in Wを$
+ハ）これは部分空間をなさない．実際，冪零行列全体の集合を$Wとし，A,B \in Wを$
 $
 A=
 \begin{pmatrix}
@@ -972,11 +1202,11 @@ A+B=
 0 & -2 \\
 \end{pmatrix}
 \end{eqnarray*}
-これは冪零行列ではないので，$A+B \not\in Wである。よって加法に関して閉じてないので部分空間をなさない。$\\
+これは冪零行列ではないので，$A+B \not\in Wである．よって加法に関して閉じてないので部分空間をなさない．$\\
 %%%
 \dotfill \\
 %%%
-ニ）これは部分空間をなさない。実際，整数を成分とする行列全体を$Wとし，$
+ニ）これは部分空間をなさない．実際，整数を成分とする行列全体を$Wとし，$
 $
 A=
 \begin{pmatrix}
@@ -985,7 +1215,7 @@ A=
 \end{pmatrix}
 \in W
 $
-とする。
+とする．
 \begin{eqnarray*}
 \frac{1}{2}A=
 \begin{pmatrix}
@@ -994,14 +1224,14 @@ $
 \end{pmatrix}
 \not\in W
 \end{eqnarray*}
-よりスカラー倍に関して閉じていないので部分空間をなさない。\\
+よりスカラー倍に関して閉じていないので部分空間をなさない．\\
 %%%
 \dotfill \\
 \newpage
 %%%
 \subsection{p121}
 問：\\
-\textsl{Hint}：p127にある定理をそのまま使って，どの２つのベクトルも直交するようなベクトルを作り，大きさを１にするように計算する。具体的に解き方は以下の解法を参照。\\
+\textsl{Hint}：p127にある定理をそのまま使って，どの２つのベクトルも直交するようなベクトルを作り，大きさを１にするように計算する．具体的に解き方は以下の解法を参照．\\
 %%%
 \dotfill \\ \\
 %%%
@@ -1023,7 +1253,7 @@ $\bm{a}_1=
 2 \\
 3
 \end{pmatrix}
-とおいて，シュミットの直交化法によって作られる，どの２つのベクトルも直交するようなベクトルを\bm{b}_1, \bm{b}_2, \bm{b}_3 ，正規直交基底を\bm{c}_1, \bm{c}_2, \bm{c}_3 とする。$
+とおいて，シュミットの直交化法によって作られる，どの２つのベクトルも直交するようなベクトルを\bm{b}_1, \bm{b}_2, \bm{b}_3 ，正規直交基底を\bm{c}_1, \bm{c}_2, \bm{c}_3 とする．$
 \begin{eqnarray*}
 & \bm{b}_1=\bm{a}_1=
 \begin{pmatrix}
@@ -1123,13 +1353,13 @@ $\bm{a}_1=
 \right\}
 \end{eqnarray*}
 \dotfill \\
-【参考】正規直交基底を求めるシュミットの直交化法は次のように書き直せる。
+【参考】正規直交基底を求めるシュミットの直交化法は次のように書き直せる．
 \begin{eqnarray*}
 & \bm{b}_1 =\bm{a}_1 \\ \\
 & \bm{b}_2 =\bm{a}_2-\frac{(\bm{a}_2 ,\bm{b}_1)}{(\bm{b}_1 ,\bm{b}_1 )}\bm{b_1} \\ \\
 & \bm{b}_3 =\bm{a}_3-\frac{(\bm{a}_3 ,\bm{b}_1)}{(\bm{b}_1 ,\bm{b}_1 )}\bm{b_1} 
 \end{eqnarray*}
-この式からそれぞれ$\bm{b}_1, \bm{b}_2, \bm{b}_3 を求めて，それぞれ大きさ１のベクトルにすれば正規直交基底が得られる。$
+この式からそれぞれ$\bm{b}_1, \bm{b}_2, \bm{b}_3 を求めて，それぞれ大きさ１のベクトルにすれば正規直交基底が得られる．$
 %
 %
 %
@@ -1140,16 +1370,16 @@ $\bm{a}_1=
 \subsection{p124}
 \noindent
 問：[6.5]\\
-\textsl{Hint}：直交補空間の定義から明らか，としては勿論いけない。直交補空間の定義から，地道に論証していく必要がある。\\ 
+\textsl{Hint}：直交補空間の定義から明らか，としては勿論いけない．直交補空間の定義から，地道に論証していく必要がある．\\ 
 \dotfill \\
-1)$^{\forall}\bm{x} \in \bm{W}に対し，(\bm{x},\bm{y})=0となる\bm{y} \in \bm{W}^{\perp}が存在する。よって(\bm{x},\bm{y})=(\bm{y},\bm{x})=0なので，\bm{y} \in \bm{W}^{\perp}に対し，\bm{x} \in (\bm{W}^{\perp})^{\perp}である。$\\
-よって$\bm{x} \in W \Longrightarrow \bm{x} \in  (\bm{W}^{\perp})^{\perp}が言えたので，\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}である。$\\
+1)$^{\forall}\bm{x} \in \bm{W}に対し，(\bm{x},\bm{y})=0となる\bm{y} \in \bm{W}^{\perp}が存在する．よって(\bm{x},\bm{y})=(\bm{y},\bm{x})=0なので，\bm{y} \in \bm{W}^{\perp}に対し，\bm{x} \in (\bm{W}^{\perp})^{\perp}である．$\\
+よって$\bm{x} \in W \Longrightarrow \bm{x} \in  (\bm{W}^{\perp})^{\perp}が言えたので，\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}である．$\\
 また定理[4.7]から
 \begin{eqnarray*}
 & \dim \bm{W} +\dim \bm{W}^{\perp} =\dim (\bm{W} +\bm{W}^{\perp} )+\dim (\bm{W} \cap \bm{W}^{\perp} ) \\
 & \dim \bm{W} +\dim \bm{W}^{\perp} =n
 \end{eqnarray*}
-$定理6.4から\mathbb{R}^nの計量空間\bm{V}は\bm{W}\dot{+}\bm{W}^{\perp}と表されること，[4.8]から，この直和の共通部分は\{ \bm{o} \}のみであることを用いた。$\\
+$定理6.4から\mathbb{R}^nの計量空間\bm{V}は\bm{W}\dot{+}\bm{W}^{\perp}と表されること，[4.8]から，この直和の共通部分は\{ \bm{o} \}のみであることを用いた．$\\
 また，同様に
 \begin{eqnarray*}
 \dim \bm{W}^{\perp} +\dim (\bm{W}^{\perp})^{\perp} =n
@@ -1158,7 +1388,7 @@ $定理6.4から\mathbb{R}^nの計量空間\bm{V}は\bm{W}\dot{+}\bm{W}^{\perp}�
 \begin{eqnarray*}
 \dim \bm{W} =\dim (\bm{W}^{\perp})^{\perp}
 \end{eqnarray*}
-よって$\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}と上の等式から，\bm{W} =  (\bm{W}^{\perp})^{\perp}$である。
+よって$\bm{W} \subseteq  (\bm{W}^{\perp})^{\perp}と上の等式から，\bm{W} =  (\bm{W}^{\perp})^{\perp}$である．
 %
 %
 %
@@ -1170,13 +1400,13 @@ $定理6.4から\mathbb{R}^nの計量空間\bm{V}は\bm{W}\dot{+}\bm{W}^{\perp}�
 \noindent
 問１
 \noindent \\
-\textsl{Hint}：最も基本的な問題の１つで，共通部分を求めるとき，この場合は$s,t,u,v \in \mathbb{R}として，s\bm{a}_1+t\bm{a}_2=u\bm{a}_3+v\bm{a}_4 とおけば，この式を満たすs,t,u,vがどういうものなのかが必然と分かってくる。なお，問題にされていないが和空間の基底を求める場合は，\bm{a}_1,\bm{a}_2,\bm{a}_3,\bm{a}_4から線型独立になるようなベクトルの組を求めればいい。$\\
+\textsl{Hint}：最も基本的な問題の１つで，共通部分を求めるとき，この場合は$s,t,u,v \in \mathbb{R}として，s\bm{a}_1+t\bm{a}_2=u\bm{a}_3+v\bm{a}_4 とおけば，この式を満たすs,t,u,vがどういうものなのかが必然と分かってくる．なお，問題にされていないが和空間の基底を求める場合は，\bm{a}_1,\bm{a}_2,\bm{a}_3,\bm{a}_4から線型独立になるようなベクトルの組を求めればいい．$\\
 \dotfill \\
 $s,t,u,v \in \mathbb{R}とすると$
 \begin{eqnarray*}
 s\bm{a}_1+t\bm{a}_2=u\bm{a}_3+v\bm{a}_4
 \end{eqnarray*}
-$とおけば，s,t,u,vの関係が導ける。この解空間は$
+$とおけば，s,t,u,vの関係が導ける．この解空間は$
 \begin{eqnarray*}
 \begin{pmatrix}
 1 & -1 & 0 & 1 \\
@@ -1581,29 +1811,33 @@ v \\
 %
 
 \section{附録III~群および体の公理}
+\subsection{p249 体の公理}
+​
+\begin{leftbar}
+	\begin{proof}
+		イ）\quad 体$K$の単位元について，$0=0+0$であるから，
+		\begin{gather*}
+			a 0=a(0+0)=a0 + a0\\
+			\therefore \quad  a0 = a0 + a0
+		\end{gather*}
+		$K$は加法について可換群であるから，$a0$の逆元$-a0$が$K$に存在する．これを用いると，
+\begin{gather*}
+	a0 + (-a0) = a0 + a0 + (-a0) \\
+	\therefore \quad 0 = a0 + a0 +(-a0)
+\end{gather*}
+ ここで，
+ \begin{align*}
+	a0 + a0 +(-a0)&=a0+ \{a0+(-a0)\} \\
+	& = a0 + 0 \\
+	& = a0
+ \end{align*}
+となるから，$0=a0$である．$0=0a$についても同様．
+\end{proof}
+\end{leftbar}
+
 
 \setcounter{equation}{0}
 \subsection{p255}
-問1：
-\begin{leftbar}
-\begin{proof}
-$H$は空集合でないから，ある元$a \in H$がとれて，
-\[
-a a^{-1} =e
-\]
-となる．ただし，$e$は$H$の単位元とする．ここまでで単位元の存在が示された．\par
-また，$a \in H$，$e \in H$であれば，仮定より，
-\[
-a^{-1} = e a^{-1} \in H
-\]
-が成立するので，任意の$a \in H$に対して，逆元$a^{-1} \in H$が存在し，$a a^{-1} =e$が成り立つことが言えた．\par
-このことより，任意の$b \in H$に対して，$b^{-1} \in H$であり，任意の$a，b \in H$に対して，
-\[
-a b=a(b^{-1})^{-1} \in H
-\]
-となり，$H$の演算が$G$と一致していることがわかるので，これで証明された．
-\end{proof}
-\end{leftbar}
 
 
 
