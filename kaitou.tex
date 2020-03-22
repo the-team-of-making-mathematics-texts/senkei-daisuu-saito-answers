@@ -26,9 +26,160 @@
 %
 %
 \section{第１章：平面および空間のベクトル（解答）}
+%
+\subsection{p5}
+
+問1：
+
+\begin{leftbar}
+	\begin{proof}
+		線分PQの中点をMとする．このとき，
+		\begin{align*}
+		\overrightarrow{OM} & = \overrightarrow{OA} + \overrightarrow{AM} \\
+		& = \bm{a} + \frac{\bm{b}-\bm{a}}{2} \\
+		& = \frac{\bm{a}+\bm{b}}{2}
+		\end{align*}
+		である．
+	\end{proof}
+\end{leftbar}
+
+問2：
+\begin{leftbar}
+	\begin{proof}
+		三角形PQRの重心をG，PQの中点をNとする．Gは線分RNを$2：1$に内分する点なので，
+		\begin{align*}
+			\overrightarrow{OG} &= \overrightarrow{OR} + \frac{2}{3} \overrightarrow{RN} \\
+			& = \bm{c}+ \frac{2}{3} \left(\frac{\bm{a}+\bm{b}}{2}-\bm{c} \right)\\
+			& = \frac{\bm{a}+\bm{b}+\bm{c}}{3}
+		\end{align*}
+		である．
+	\end{proof}
+\end{leftbar}
+
+\newpage
+
+\subsection{p7}
+
+問： 
+\begin{leftbar}
+	[1.4]の結果を利用する．\par 
+	求める三角形の面積を$S$，$\bm{a}=\overrightarrow{P_1 P_2}=(x_2-x_1，y_2-y_1，z_2-z_1)$，$\bm{b}=\overrightarrow{P_1 P_3}=(x_3-x_1，y_3-y_1，z_3-z_1)$とおく，
+	このとき，
+	\begin{align*}
+		S & = \frac{1}{2} \sqrt{\|\overrightarrow{P_1 P_2}\|^2 \|\overrightarrow{P_1 P_3}\|^2 - \overrightarrow{P_1 P_2} \cdot \overrightarrow{P_1 P_3}} \\
+		  & = \frac{1}{2} \sqrt{\|\bm{a}\|^2 \|\bm{b}\|^2 - (\bm{a}\cdot \bm{b})^2 } \\
+		  & = \frac{1}{2} \{[(x_2 - x_1)+(y_2-y_1)+ (z_2 - z_1)][(x_3 - x_1)+(y_3-y_1)+ (z_3 - z_1)]\\
+		  & \qquad - [(x_2-x_1)(x_3-x_1)+(y_2 -y_1)(y_3-y_1)+(z_2-z_1)(z_3-z_1)]^2\}^{\frac{1}{2}}
+	\end{align*}
+	である，
+\end{leftbar}
+	
+\newpage
+
 \subsection{p8}
-%
-%
+
+問1．
+
+\begin{leftbar}
+	(1) \quad 与えられた直線を$\ell$とする．$\ell$の方程式に$x=-2$を代入すると，$y=2$となるため，$\ell$は点$(-2，2)$を通る．
+	また，$\ell$の法線ベクトルのひとつは，
+	$
+	\left(
+		\begin{array}{c}
+			2 \\
+			3
+		\end{array}
+	\right)
+		$なので，$\ell$の方向ベクトルのひとつは，
+		$
+		\left(
+		\begin{array}{c}
+			-3 \\
+			2
+		\end{array}
+		\right)
+		$である．よって，$\ell$のベクトル表示は，
+		$
+		\left(
+		\begin{array}{c}
+			x \\
+			y
+		\end{array}
+		\right)
+		= \left(
+		\begin{array}{c}
+		-2 \\
+		2
+		\end{array}
+		\right)
+		+t \left(
+			\begin{array}{c}
+				-3 \\
+				2
+			\end{array}
+			\right)
+			~(-\infty < t < \infty)$である．\\
+
+			(2) \quad 与えられた直線を$\ell'$とする．$\ell '$の方向ベクトルのひとつは，$
+			\left (
+				\begin{array}{c}
+					0 \\
+					1
+				\end{array}
+			\right)
+			$である．また，$\ell '$は点$(3，0)$を通るので，そのベクトル表示は，
+			$
+			\left(
+				\begin{array}{c}
+					x \\
+					y
+				\end{array}
+			\right)
+			= \left(
+				\begin{array}{c}
+				3 \\
+				0
+				\end{array}
+			\right)
+			+t \left(
+				\begin{array}{c}
+					0 \\
+					1
+					\end{array}
+				\right) ~(-\infty < t < \infty)
+				$となる．
+		\end{leftbar}
+
+		\newpage
+
+		問2．
+		
+		\begin{leftbar}
+			(1) \par
+			与えられたベクトル表示から．
+			\begin{align*}
+				\begin{cases}
+					&x=1+2t \\
+					&y=-1+t
+				\end{cases}
+			\end{align*}
+			であるから，
+			\begin{align*}
+				\begin{cases}
+					&t=\frac{x-1}{2} \\
+					&t=y+1
+				\end{cases}
+			\end{align*}
+			である．これから$t$を消去すると，
+			\begin{gather*}
+				\frac{x-1}{2} = y+1 \\
+				\therefore \quad x-2y-3 =0
+			\end{gather*}
+			である．\\
+
+			(2) \par 
+			点$(-1，-2)$を通り，$x$軸に平行な直線を表すから，$y=-2$が求める直線の方程式である．
+		\end{leftbar}
 %
 \newpage
 %
