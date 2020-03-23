@@ -266,12 +266,101 @@ $はこれを満たす．このときの$y$の値を計算すると，ぞれぞ�
             \]
             と表せる．
 \end{leftbar}
-%
+
+
+問2：
+\begin{leftbar}
+    \begin{proof}
+        $t$を$0 \le t \le 1$をみたす実数，線分$\mathrm{P_1 P_2}$上の任意の点の位置ベクトルを$\bm{x}$とする．
+        このとき，
+        \begin{align*}
+            \bm{x} & = \overrightarrow{O P_1}+t\overrightarrow{P_1 P_2} \\
+            & = \bm{x}_1 + t (\bm{x}_2 - \bm{x}_1) \\
+             &= (1-t) \bm{x}_1 + t \bm{x}_2
+        \end{align*}
+        である．$1-t = t_1$，$t=t_2$と改めておくと，
+        \[
+            \bm{x}= t_1 \bm{x}_1 + t_2 \bm{x}_2 ，t_1 + t_2 =1
+        \]
+        となり，これが証明すべきことであった．
+    \end{proof}
+\end{leftbar}
+
 \newpage
-%
-%
-%
-\subsection{p11〜12}
+\subsection{p11~12}
+
+問1：
+
+\begin{leftbar}
+    与えられた平面を$(S)$とおく．$(S)$は3点$(-1，0，1)$，$(2，0，-1)$，$(0，-1，0)$を通るので，
+    \[
+   \bm{x}_1=\left(
+        \begin{array}{c}
+            -1 \\
+            0 \\
+            1
+        \end{array}
+   \right)
+   ，\quad \bm{x}_2=\left(
+    \begin{array}{c}
+        2 \\
+        0 \\
+        -1
+    \end{array}
+\right) \quad 
+\bm{x}_3=\left(
+    \begin{array}{c}
+        0 \\
+        -1 \\
+        0
+    \end{array}
+\right)
+\]
+と改めておくと，
+\begin{gather*}
+    \bm{x}_2 - \bm{x}_1 =
+    \left(
+        \begin{array}{c}
+            3 \\
+            0 \\
+            -1
+        \end{array}
+    \right)
+    ，\quad 
+    \bm{x}_3 - \bm{x}_1 =
+    \left(
+    \begin{array}{c}
+        1 \\
+        -1 \\
+        -1
+    \end{array}
+    \right)
+\end{gather*}
+となるので，求めるベクトル表示のひとつは，
+\[
+    (S) \colon \bm{x}=\left(
+        \begin{array}{c}
+            -1 \\
+            0 \\
+            1
+        \end{array}
+    \right)+ t 
+    \left(
+        \begin{array}{c}
+            3 \\
+            0 \\
+            -1
+        \end{array}
+    \right)+s
+    \left(
+        \begin{array}{c}
+            1 \\
+            -1 \\
+            -1
+        \end{array}
+        \right)~( -\infty < t，s<\infty)
+        \]
+    \end{leftbar}
 %
 %
 %
