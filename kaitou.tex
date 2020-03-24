@@ -487,7 +487,67 @@ $はこれを満たす．このときの$y$の値を計算すると，ぞれぞ�
 %
 \subsection{p18}
 %
-%
+問： 
+\begin{leftbar}
+    \begin{proof}
+        $A$，$B$，$C$が$2 \times 2$行列の場合を証明する．
+        \begin{gather*}
+            A=
+            \begin{pmatrix}
+                a & b \\
+                c & d
+            \end{pmatrix}
+            ，
+            B=
+            \begin{pmatrix}
+                e & f \\
+                g & h
+            \end{pmatrix}
+            ，C=
+            \begin{pmatrix}
+                i & j \\
+                k & l
+            \end{pmatrix}
+        \end{gather*}
+        とし，$A$，$B$，$C$の成分はすべて複素数であるとする．このとき，
+        \begin{align*}
+            (AB)C & =
+            \begin{pmatrix}
+                ae+bg & af+bh \\
+                ce+dg & cf+dh
+            \end{pmatrix}
+            \begin{pmatrix}
+                i & j \\
+                k & l
+            \end{pmatrix}
+            \\
+            & =
+            \begin{pmatrix}
+                aei +bgi +afk +bhk & aej+bgj+afl+bhl \\
+                cei +dgi+cfk +dhk & cej +dgj + cfl +dhl
+            \end{pmatrix}
+        \end{align*}
+            となる．他方
+            \begin{align*}
+                A(BC)& =
+                \begin{pmatrix}
+                    a & b \\
+                    c & d
+                \end{pmatrix}
+                \begin{pmatrix}
+                    ei + fk & ej +fl \\
+                    gi + hk & gj +hl 
+                \end{pmatrix}
+                \\
+                & =
+                \begin{pmatrix}
+                    aei + afk +bgi +bhk & aej +afl +bgj +bhl \\
+                    cei + cfk + dgi +dhk & cej + cfl + dgi +dhl
+                \end{pmatrix}
+            \end{align*}
+            となり，たしかに$(AB)C=A(BC)$である．
+        \end{proof}
+    \end{leftbar}
 %
 \newpage
 %
