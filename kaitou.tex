@@ -2119,7 +2119,13 @@ v \\
         上限の定義から，$\alpha - \varepsilon <x$となる$x \in M$が存在し，このとき$x^k >a$となり$M$の定義に矛盾．\par 
         (2) \quad $ \alpha^k \ge a$であることを示す．$\alpha^k <a$と仮定すると，$\varepsilon>0$を十分小さく取ったとき，
         $(\alpha + \varepsilon)^k<a$となり，$M$の定義から$\alpha + \varepsilon \in M$となるが，これは$\alpha = \sup M$であることに矛盾する．\par 
-        (1)，(2)より，$\alpha^k =a$となり，$x^k=a$となる$x$の存在が示された．
+        (1)，(2)より，$\alpha^k =a$となり，$x^k=a$となる$x$の存在が示された．\par 
+        一意性を示す．${\alpha_1}^k =a$なる$\alpha_1>0$の存在を仮定すると，
+        \begin{gather*}
+            (\alpha - \alpha_1)(\alpha^{k-1}+{}_n \mathrm{C} _1 \alpha^{k-2} \alpha_1 + \cdots +{}_n \mathrm{C} _{n-1} \alpha {\alpha_1}^{k-2} + {\alpha_1}^{k-1})= \alpha^k -{\alpha_1}^k =a-a=0 \\
+            \therefore \quad \alpha = \alpha_1 \quad (\because~\alpha^{k-1}+{}_n \mathrm{C} _1 \alpha^{k-2} \alpha_1 + \cdots +{}_n \mathrm{C} _{n-1} \alpha {\alpha_1}^{k-2} + {\alpha_1}^{k-1}>0 )
+        \end{gather*}
+        これより一意性も示された．
         \end{proof}
     \end{leftbar}
 
