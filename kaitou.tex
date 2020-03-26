@@ -603,6 +603,52 @@ $はこれを満たす．このときの$y$の値を計算すると，ぞれぞ�
 			である．これが証明すべきことであった．
 		\end{proof}
 	\end{leftbar}
+\begin{leftbar}
+$\bm{x} =
+\left(
+\begin{array}{c}
+x \\
+y
+\end{array}
+\right)
+$
+とおくと，(17)式より，
+\begin{align*}
+T \bm{x} &= \frac{ax+by}{a^2+b^2} \bm{a} \\
+&=\left(
+\begin{array}{c}
+a^2x +aby \\
+ab x + b^2y \\
+\end{array}
+\right)
+\\
+&=
+\begin{pmatrix}
+a^2 & ab \\
+ab & b^2
+\end{pmatrix}
+\left(
+\begin{array}{c}
+x \\
+y
+\end{array}
+\right) \\
+&= 
+\begin{pmatrix}
+a^2 & ab \\
+ab & b^2
+\end{pmatrix}
+\bm{x}
+\end{align*}
+であるから，
+\[
+T=\begin{pmatrix}
+a^2 & ab \\
+ab & b^2
+\end{pmatrix}
+\]
+となる．
+\end{leftbar}
 %
 \newpage
 %
@@ -789,7 +835,6 @@ $となることから主張が従う．$
 問1：\\
 \noindent
 \begin{leftbar}
-\begin{itembox}[c]{解答}
 \begin{proof}
 $w，x，y，z \in \mathbb{C}$として，$X=
 \begin{pmatrix}
@@ -883,7 +928,6 @@ j + 2k =0 \\
 \end{gather*}
 簡単な計算により，この連立方程式を満たす$h，i，j，k \in \mathbb{C}$は存在しない．これで後半の主張も示された．
 \end{proof}
-\end{itembox}
 \end{leftbar}
 %
 \newpage
