@@ -722,6 +722,50 @@ ab & b^2
 \end{proof}
 \end{leftbar}
 \newpage
+ロ)
+\begin{leftbar}
+    \begin{proof}
+        $\bm{a}=
+        \begin{pmatrix}
+            a_1 \\
+            a_2
+        \end{pmatrix}
+        $，$\bm{b}=
+        \begin{pmatrix}
+            b_1 \\
+            b_2
+        \end{pmatrix}
+        $とする．このとき，$\bm{a}$と$\bm{b}$が直交することから，
+        \begin{gather*}
+            \bm{a} \cdot \bm{b}=0 \\
+            \therefore ~a_1 b_1 + a_2 b_1 =0
+        \end{gather*}
+        である．ここで，
+        \begin{align*}
+            TS & = \frac{1}{({a_1}^2 +{a_2}^2)}
+            \begin{pmatrix}
+                {a_1}^2 & a_1 a_2 \\
+                a_1 a_2 & {a_2}^2
+            \end{pmatrix}
+            \frac{1}{({b_1}^2 +{b_2}^2)}
+            \begin{pmatrix}
+                {b_1}^2 & b_1 b_2 \\
+                b_1 b_2 & {b_2}^2
+            \end{pmatrix}
+            \\
+            &=\frac{a_1 b_1 + a_2 b_2}{({a_1}^2 +{a_2}^2)({b_1}^2 +{b_2}^2)}
+            \begin{pmatrix}
+                a_1 b_1 & a_1 b_2 \\
+                a_2 b_1 & a_2 b_2
+            \end{pmatrix}
+            =0 \\
+            & \qquad \qquad  (\because ~ a_1 b_1 + a_2 b_1 =0)
+        \end{align*}
+        である．同様に$ST$を計算すると，$ST=0$であることもわかり，これで$TS=ST=0$が証明された．
+    \end{proof}
+\end{leftbar}
+            
+\newpage
 %
 %
 \subsection{p22〜23}
