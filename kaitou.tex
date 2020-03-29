@@ -658,7 +658,70 @@ ab & b^2
 \end{leftbar}
 %
 \newpage
-%
+問2：\\
+イ)
+\begin{leftbar}
+    \begin{proof}
+    $\bm{a}=
+    \left(
+        \begin{array}{c}
+            a_1 \\
+            a_2
+        \end{array}
+    \right)
+    $，
+    $\bm{b}=
+    \left(
+        \begin{array}{c}
+            b_1 \\
+            b_2
+        \end{array}
+    \right)
+    $，$\bm{a} \ne \bm{0}$かつ$\bm{b} \ne \bm{0}$とする．
+    このとき，
+    \begin{align*}
+        T \bm{x} &=\frac{(\bm{a}，\bm{x})}{(\bm{a}，\bm{a})} \bm{a} \\
+        & = \frac{a_1 x + a_2 y}{{a_1}^2+{a_2}^2} 
+        \begin{pmatrix}
+            a_1 \\
+            a_2
+        \end{pmatrix}
+        \\
+        & =
+        \frac{1}{{a_1}^2+{a_2}^2}
+        \begin{pmatrix}
+            {a_1}^2 & a_1 a_2 \\
+            a_1 a_2 & {a_2}^2
+        \end{pmatrix}
+        \begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix}
+    \end{align*}
+    となる．つまり，$T=\frac{1}{{a_1}^2+{a_2}^2}
+    \begin{pmatrix}
+        {a_1}^2 & a_1 a_2 \\
+        a_1 a_2 & {a_2}^2
+    \end{pmatrix}
+    $である．このとき，
+    \begin{align*}
+        T^2 &= \frac{1}{({a_1}^2+{a_2}^2)^2}
+        \begin{pmatrix}
+            {a_1}^4 + {a_1}^2 {a_2}^2 & {a_1}^3 a_2 + a_1 {a_2}^3 \\
+            {a_1}^3 a_2 + a_1 {a_2}^3 & {a_2}^4 + {a_1}^2 {a_2}^2
+        \end{pmatrix}
+        \\
+        &= \frac{1}{{a_1}^2+{a_2}^2}
+        \begin{pmatrix}
+            {a_1}^2 & a_1 a_2 \\
+            a_1 a_2 & {a_2}^2
+        \end{pmatrix}
+        =T
+    \end{align*}
+    となり，$T^2=T$である．$S^2=S$も同様にして示される．
+\end{proof}
+\end{leftbar}
+\newpage
 %
 %
 \subsection{p22〜23}
