@@ -763,10 +763,53 @@ ab & b^2
         \end{align*}
         である．同様に$ST$を計算すると，$ST=0$であることもわかり，これで$TS=ST=0$が証明された．
     \end{proof}
-\end{leftbar}
-            
+\end{leftbar}     
 \newpage
-%
+ハ)
+\begin{leftbar}
+    \begin{proof}
+    イ)，ロ)の文字や結論を用いると，
+        \begin{align*}
+        T \bm{x} + S \bm{x} & =
+        \frac{1}{{a_1}^2+{a_2}^2}
+        \begin{pmatrix}
+            {a_1}^2 & a_1 a_2 \\
+            a_1 a_2 & {a_2}^2
+        \end{pmatrix}
+        \begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix}
+        +
+        \frac{1}{{b_1}^2+{b_2}^2}
+        \begin{pmatrix}
+            {b_1}^2 & b_1 b_2 \\
+            b_1 b_2 & {b_2}^2
+        \end{pmatrix}
+        \begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix}
+        \\
+        & = \frac{1}{({a_1}^2+{a_2}^2)({b_1}^2+{b_2}^2)}
+        \begin{pmatrix}
+            ({a_1}^2+{a_2}^2)({b_1}^2+{b_2}^2) & ({a_1}^2+{a_2}^2)({b_1}^2+{b_2}^2) \\
+            ({a_1}^2+{a_2}^2)({b_1}^2+{b_2}^2) & ({a_1}^2+{a_2}^2)({b_1}^2+{b_2}^2)
+        \end{pmatrix}
+        \begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix}
+        \\
+        & =\begin{pmatrix}
+            x \\
+            y
+        \end{pmatrix}
+        =\bm{x}
+    \end{align*}
+    となる．これが証明すべきことであった．
+\end{proof}
+\end{leftbar}
 %
 \subsection{p22〜23}
 %
