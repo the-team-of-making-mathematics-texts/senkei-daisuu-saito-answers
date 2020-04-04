@@ -943,7 +943,48 @@ $A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列と
 %
 \subsection{p62〜63}
 %
-%
+問1：\\
+\begin{leftbar}
+    \begin{proof}
+        定義に従って計算すると，
+        \begin{align*}
+            \|\bm{x}+\bm{y} \|^2 +\|\bm{x}-\bm{y} \|^2 & = (\bm{x}+\bm{y}，\bm{x}+\bm{y})+(\bm{x}-\bm{y}，\bm{x}-\bm{y}) \\
+            & =(\bm{x}，\bm{x})+(\bm{x}，\bm{y})+(\bm{y}，\bm{x})+(\bm{y}，\bm{y})+(\bm{x}，\bm{x})-(\bm{x}，\bm{y})-(\bm{y}，\bm{x})+(\bm{y}，\bm{y}) \\
+            & = 2((\bm{x}，\bm{x})+(\bm{y}，\bm{y})) \\
+            & =2 (\|\bm{x}\|+2\|\bm{y}\|)
+        \end{align*}
+        となり，これが証明すべきことであった．
+    \end{proof}
+\end{leftbar}
+問2：
+\begin{leftbar}
+    \begin{proof}
+        \[
+        \|\bm{x}+\bm{y}\|^2=(\bm{x}，\bm{x})+(\bm{x}，\bm{y})+(\bm{y}，\bm{x})+(\bm{y}，\bm{y})
+        \]
+        である．ここで，$\bm{x}$と$\bm{y}$が直交することから，
+        \[
+            (\bm{x}，\bm{y})＋(\bm{y}，\bm{x})=(\bm{x}，\bm{y})＋\overline{(\bm{x}，\bm{y})}=0
+            \]
+            であり，これを用いると
+        \[
+            \|\bm{x}+\bm{y}\|^2 =(\bm{x}，\bm{x})+(\bm{y}，\bm{y})=\|\bm{x}\|^2 +\|\bm{y}\|^2
+        \]
+        となる．$\bm{x}$，$\bm{y}$がともに実ベクトルのときは$(\bm{x}，\bm{y})=0$であるから確かに逆が成り立つが，たとえば$\bm{x}=
+        \begin{pmatrix}
+            2 \\
+            0
+        \end{pmatrix}
+        $，
+        $
+        \bm{y}=
+        \begin{pmatrix}
+            2i \\
+            0
+        \end{pmatrix}
+        $とすれば，等式は成り立つが$\bm{x}$と$\bm{y}$は直交しないため，逆は成り立たない．
+    \end{proof}
+\end{leftbar}
 %
 \newpage
 %
