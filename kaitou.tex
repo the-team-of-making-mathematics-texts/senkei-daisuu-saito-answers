@@ -1362,7 +1362,33 @@ $\dfrac{1}{2}(P + E) が逆行列であることを示す．$
 \section{第３章：行列式（解答）}
 \subsection{p83}
 %
-%
+問：
+\begin{leftbar}
+    \begin{proof}
+        $A =(a_{ij})$，$X=(x_{ij})$とおく．このとき，$AX$の第$j$列は，
+        \[
+            \begin{pmatrix}
+                \sum_{k=1}^{n} a_{1k} x_{kj} \\
+                \sum_{k=1}^{n} a_{2k} x_{kj} \\
+                \vdots \\
+                \sum_{k=1}^{n} a_{nk} x_{kj}
+            \end{pmatrix}
+            = \bm{a}_1 x_{1j}+ \bm{a}_2 x_{2j}+ \cdots + \bm{a}_n x_{nj}
+        \]
+        となる．ただしここで，$\bm{a}_i$は$A$の第$i$列である．よって，多重線形性を用いると，$AX$の行列式は
+        \begin{align*}
+            &\sum_{\sigma(1),\sigma(2),\ldots,\sigma(n)=1}^{n}  \det(\bm{a}_{\sigma(1)},\bm{a}_{\sigma(2)},\ldots,\bm{a}_{\sigma(n)}) x_{\sigma(1)1} x_{\sigma(2)2} \cdots x_{\sigma(n)n} \\
+            =& \sum_{\sigma \in S_n} \det(\bm{a}_{\sigma(1)},\bm{a}_{\sigma(2)},\ldots,\bm{a}_{\sigma(n)})  x_{\sigma(1)1} x_{\sigma(2)2} \cdots x_{\sigma(n)n} \\
+            =& \sum_{\sigma \in S_n}\mathrm{sgn} \,(\sigma) \det(\bm{a}_1,\bm{a}_2,\ldots,\bm{a}_n)  x_{\sigma(1)1} x_{\sigma(2)2} \cdots x_{\sigma(n)n} \\
+            =& \det A \cdot \det X
+        \end{align*}
+        となり，
+        \[
+            \det (AX)= \det A \cdot \det X
+        \]
+        である．これが証明すべきことであった．
+    \end{proof}
+\end{leftbar}
 %
 \newpage
 %
