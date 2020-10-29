@@ -67,7 +67,7 @@ setpagesize=false,
 		三角形PQRの重心をG，PQの中点をNとする．Gは線分RNを$2：1$に内分する点なので，
 		\begin{align*}
 			\overrightarrow{\mathrm{OG}} &= \overrightarrow{\mathrm{OR}} + \frac{2}{3} \overrightarrow{\mathrm{RN}} \\
-			& = \bm{c}+ \frac{2}{3} \left(\frac{\bm{a}+\bm{b}}{2}-\bm{c} \right)\\
+			& = \bm{c}+ \frac{3}{2} \left (\frac{\bm{a}+\bm{b}}{2}-\bm{c} \right) \\
 			& = \frac{\bm{a}+\bm{b}+\bm{c}}{3}
 		\end{align*}
 		である．
@@ -83,40 +83,35 @@ setpagesize=false,
     求めるベクトルを，$\bm{x}=(x，y，z)$~($x^2+y^2 +z^2=1$)とおく．
     このとき，内積の定義により，
     \begin{gather*}
-        \bm{x} \cdot \left(
-            \begin{array}{c}
+        \bm{x} \cdot 
+        \begin{pmatrix}
                 1 \\
                 1 \\
                 1
-            \end{array}
-        \right)
+            \end{pmatrix}
         =x+y+z= 1 \cdot \sqrt{3} \cdot \cos \frac{\pi}{6} =\frac{3}{2}　\\
-        \bm{x} \cdot \left(
-            \begin{array}{c}
+        \bm{x} \cdot 
+            \begin{pmatrix}
                 1 \\
                 1 \\
                 4
-            \end{array}
-        \right)
+            \end{pmatrix}
         =x+y+4z= 1 \cdot 3\sqrt{2} \cdot \cos \frac{\pi}{4} =3
         \end{gather*}
         これらの式から，
         \begin{gather*}
-        \left(
-            \begin{array}{c}
+            \begin{pmatrix}
             x \\
             y \\
             z  
-    \end{array}
-        \right)
+    \end{pmatrix}
     =
-            \left(
-                \begin{array}{c}
+                \begin{pmatrix}
                 \frac{2 \pm \sqrt{2}}{4} \\
                 \frac{2 \mp \sqrt{2}}{4} \\
                 \frac{1}{2} 
-    \end{array}
-            \right)\quad (\text{複号同順})
+    \end{pmatrix}
+            \quad (\text{複号同順})
     \end{gather*}
         である．
     \end{leftbar}
@@ -145,69 +140,56 @@ setpagesize=false,
 	(1) \quad 与えられた直線を$\ell$とする．$\ell$の方程式に$x=-2$を代入すると，$y=2$となるため，$\ell$は点$(-2，2)$を通る．
 	また，$\ell$の法線ベクトルのひとつは，
 	$
-	\left(
-		\begin{array}{c}
+		\begin{pmatrix}
 			2 \\
 			3
-		\end{array}
-	\right)
+		\end{pmatrix}
 		$なので，$\ell$の方向ベクトルのひとつは，
 		$
-		\left(
-		\begin{array}{c}
+		\begin{pmatrix}
 			-3 \\
 			2
-		\end{array}
-		\right)
+		\end{pmatrix}
 		$である．よって，$\ell$のベクトル表示のひとつは，
 		$
-		\left(
-		\begin{array}{c}
+		\begin{pmatrix}
 			x \\
 			y
-		\end{array}
-		\right)
-		= \left(
-		\begin{array}{c}
+		\end{pmatrix}
+		= 
+		\begin{pmatrix}
 		-2 \\
 		2
-		\end{array}
-		\right)
-		+t \left(
-			\begin{array}{c}
+		\end{pmatrix}
+		+t 
+			\begin{pmatrix}
 				-3 \\
 				2
-			\end{array}
-			\right)
+			\end{pmatrix}
 			~(-\infty < t < \infty)$である．\\
 
 			(2) \quad 与えられた直線を$\ell'$とする．$\ell '$の方向ベクトルのひとつは，$
-			\left (
-				\begin{array}{c}
+				\begin{pmatrix}
 					0 \\
 					1
-				\end{array}
-			\right)
+				\end{pmatrix}
 			$である．また，$\ell '$は点$(3，0)$を通るので，そのベクトル表示のひとつは，
 			$
-			\left(
-				\begin{array}{c}
+				\begin{pmatrix}
 					x \\
 					y
-				\end{array}
-			\right)
-			= \left(
-				\begin{array}{c}
+				\end{pmatrix}
+			= 
+				\begin{pmatrix}
 				3 \\
 				0
-				\end{array}
-			\right)
-			+t \left(
-				\begin{array}{c}
+				\end{pmatrix}
+			+t 
+				\begin{pmatrix}
 					0 \\
 					1
-					\end{array}
-				\right) ~(-\infty < t < \infty)
+                    \end{pmatrix}
+                     ~(-\infty < t < \infty)
 				$となる．
 		\end{leftbar}
 
@@ -234,7 +216,7 @@ setpagesize=false,
 				\frac{x-1}{2} = y+1 \\
 				\therefore ~ x-2y-3 =0
 			\end{gather*}
-			である．\\
+			である．
 
 			(2) \par 
 			点$(-1，-2)$を通り，$x$軸に平行な直線を表すから，$y=-2$が求める直線の方程式である．
@@ -261,72 +243,58 @@ setpagesize=false,
     \therefore \quad -x+z=1
 \end{gather*}
 である．このとき，$
-\left(
-    \begin{array}{c}
+    \begin{pmatrix}
         x \\
         z
-    \end{array}
-\right) =
-\left(
-    \begin{array}{c}
+    \end{pmatrix}
+ =
+    \begin{pmatrix}
         1 \\
         2
-    \end{array}
-\right)，
-\left(
-    \begin{array}{c}
+    \end{pmatrix}
+，
+    \begin{pmatrix}
         2 \\
         3
-    \end{array}
-\right)
+    \end{pmatrix}
 $はこれを満たす．このときの$y$の値を計算すると，それぞれ$-3$，$-5$なので，結局，与えられた直線は2点$(1，-3，2)，(2，-5，3)$を通る．
-すなわち，この直線の方向ベクトルのひとつは\[
-    \left(
-\begin{array}{c}
+すなわち，この直線の方向ベクトルのひとつは
+\[
+\begin{pmatrix}
     2 \\
     -5 \\
     3
-\end{array}
-    \right)
+\end{pmatrix}
     -
-    \left(
-        \begin{array}{c}
+        \begin{pmatrix}
             1 \\
             -3 \\
             2
-        \end{array}
-            \right)
+        \end{pmatrix}
             =
-            \left(
-                \begin{array}{c}
+                \begin{pmatrix}
                     1 \\
                     -2 \\
                     1
-                \end{array}
-                    \right)
+                \end{pmatrix}
                     \]
 である．したがって求めるベクトル表示のひとつは，直線上の任意の位置ベクトルを$\bm{x}$とすると，
 \[
-    \bm{x}= \left(
-        \begin{array}{c}
+    \bm{x}
+        \begin{pmatrix}
             1 \\
             -3 \\
             2
-        \end{array}
-            \right)
+        \end{pmatrix}
             +t
-            \left(
-            \begin{array}{c}
+            \begin{pmatrix}
                 1 \\
                 -2 \\
                 1
-            \end{array}
-            \right)
+            \end{pmatrix}
             \]
             と表せる．
 \end{leftbar}
-
-
 問2：
 \begin{leftbar}
     \begin{proof}
@@ -352,72 +320,64 @@ $はこれを満たす．このときの$y$の値を計算すると，それぞ�
 
 \begin{leftbar}
     与えられた平面を$(S)$とおく．$(S)$は3点$(-1，0，1)$，$(2，0，-1)$，$(0，-1，0)$を通るので，
-    \[
-   \bm{x}_1=\left(
-        \begin{array}{c}
+    \begin{equation*}
+   \bm{x}_1=
+        \begin{pmatrix}
             -1 \\
             0 \\
             1
-        \end{array}
-   \right)
-   ，\quad \bm{x}_2=\left(
-    \begin{array}{c}
+        \end{pmatrix}
+   ，\quad \bm{x}_2=
+    \begin{pmatrix}
         2 \\
         0 \\
         -1
-    \end{array}
-\right) \quad 
-\bm{x}_3=\left(
-    \begin{array}{c}
+    \end{pmatrix}
+ \quad 
+\bm{x}_3=
+    \begin{pmatrix}
         0 \\
         -1 \\
         0
-    \end{array}
-\right)
-\]
+    \end{pmatrix}
+\end{equation*}
 と改めておくと，
 \begin{gather*}
     \bm{x}_2 - \bm{x}_1 =
-    \left(
-        \begin{array}{c}
+        \begin{pmatrix}
             3 \\
             0 \\
             -1
-        \end{array}
-    \right)
+        \end{pmatrix}
     ，\quad 
     \bm{x}_3 - \bm{x}_1 =
-    \left(
-    \begin{array}{c}
+    \begin{pmatrix}
         1 \\
         -1 \\
         -1
-    \end{array}
-    \right)
+    \end{pmatrix}
 \end{gather*}
 となり，$\bm{x}_2 - \bm{x}_1$と$\bm{x}_3 - \bm{x}_1$は線型独立なので，求めるベクトル表示のひとつは，
 \[
-    (S) \colon \bm{x}=\left(
-        \begin{array}{c}
+    (S) \colon \bm{x}=
+        \begin{pmatrix}
             -1 \\
             0 \\
             1
-        \end{array}
-    \right)+ t 
-    \left(
-        \begin{array}{c}
+        \end{pmatrix}
+    + t 
+        \begin{pmatrix}
             3 \\
             0 \\
             -1
-        \end{array}
-    \right)+s
-    \left(
-        \begin{array}{c}
+        \end{pmatrix}
+    +s
+        \begin{pmatrix}
             1 \\
             -1 \\
             -1
-        \end{array}
-        \right)~( -\infty < t，s<\infty)
+        \end{pmatrix}
+        ~( -\infty < t，s<\infty)
         \]
     \end{leftbar}
 %
@@ -470,22 +430,18 @@ $はこれを満たす．このときの$y$の値を計算すると，それぞ�
     $(S_1)$，$(S_2)$の法線ベクトルをそれぞれ$\bm{x}_1$，$\bm{x}_2$とおくと，
     \begin{gather*}
         \bm{x}_1 =
-        \left(
-            \begin{array}{c}
+            \begin{pmatrix}
                 1\\
                 1\\
                 2
-            \end{array}
-        \right)
+            \end{pmatrix}
         ，
         \bm{x}_2 =
-        \left(
-            \begin{array}{c}
+            \begin{pmatrix}
                 3\\
                 3\\
                 0
-            \end{array}
-        \right)
+            \end{pmatrix}
         \end{gather*}
         である．ゆえに，交角を$\theta ~(0 \le \theta \le \frac{\pi}{2})$とすると，
         \[
@@ -575,19 +531,15 @@ $はこれを満たす．このときの$y$の値を計算すると，それぞ�
 				-1 & 0\\
 				0 & -1
 			\end{pmatrix}
-			\left(
-				\begin{array}{c}
+				\begin{pmatrix}
 					x \\
 					y 
-				\end{array}
-			\right)
+				\end{pmatrix}
 			=
-			\left(
-				\begin{array}{c}
+				\begin{pmatrix}
 					-x \\
 					-y 
-				\end{array}
-			\right)
+				\end{pmatrix}
 			\]
 			となり，これは明らかに線型変換である．対応する行列は，$
 			\begin{pmatrix}
@@ -613,34 +565,30 @@ $はこれを満たす．このときの$y$の値を計算すると，それぞ�
     \newpage
 \begin{leftbar}
 $\bm{x} =
-\left(
-\begin{array}{c}
+\begin{pmatrix}
 x \\
 y
-\end{array}
-\right)
+\end{pmatrix}
 $
 とおくと，(17)式より，
 \begin{align*}
 T \bm{x} &= \frac{ax+by}{a^2+b^2} \bm{a} \\
-&=\left(
-\begin{array}{c}
+&=
+\begin{pmatrix}
 a^2x +aby \\
 ab x + b^2y \\
-\end{array}
-\right)
+\end{pmatrix}
 \\
 &=
 \begin{pmatrix}
 a^2 & ab \\
 ab & b^2
 \end{pmatrix}
-\left(
-\begin{array}{c}
+\begin{pmatrix}
 x \\
 y
-\end{array}
-\right) \\
+\end{pmatrix}
+ \\
 &= 
 \begin{pmatrix}
 a^2 & ab \\
@@ -664,20 +612,16 @@ ab & b^2
 \begin{leftbar}
     \begin{proof}
     $\bm{a}=
-    \left(
-        \begin{array}{c}
+        \begin{pmatrix}
             a_1 \\
             a_2
-        \end{array}
-    \right)
+        \end{pmatrix}
     $，
     $\bm{b}=
-    \left(
-        \begin{array}{c}
+        \begin{pmatrix}
             b_1 \\
             b_2
-        \end{array}
-    \right)
+        \end{pmatrix}
     $，$\bm{a} \ne \bm{0}$かつ$\bm{b} \ne \bm{0}$とする．
     このとき，
     \begin{align*}
@@ -897,30 +841,28 @@ ab & b^2
 \begin{leftbar}
 \begin{proof}
 実際に行列式を計算してみると，
-\begin{eqnarray}
-\left |
-\begin{array}{ccc}
+\begin{align}
+\begin{vmatrix}
 1 & 1 & 1 \\
 x & x_1 & x_2 \\
 y & y_1 & y_2 
-\end{array}
-\right |
-& = & 1 \cdot x_1 \cdot y_2 +1 \cdot x_2 \cdot y + 1 \cdot x \cdot y_1 - 1 \cdot x_2 \cdot y_1 - 1 \cdot x \cdot y_2 - 1 \cdot x_1 \cdot y \\
+\end{vmatrix}
+& =  1 \cdot x_1 \cdot y_2 +1 \cdot x_2 \cdot y + 1 \cdot x \cdot y_1 - 1 \cdot x_2 \cdot y_1 - 1 \cdot x \cdot y_2 - 1 \cdot x_1 \cdot y \\
 \label{1}
-& = & y(x_2 -x_1) + x ( y_1 - y_2 ) +x_1 y_2 - x_2 y_1
-\end{eqnarray}
-\eqref{1} について，$x_1 \neq x_2$のとき，
-\begin{eqnarray}
-& & y(x_2 -x_1) + x ( y_1 - y_2 ) +x_1 y_2 - x_2 y_1=0 \\
+& =  y(x_2 -x_1) + x ( y_1 - y_2 ) +x_1 y_2 - x_2 y_1
+\end{align}
+となる．\eqref{1} について，$x_1 \neq x_2$のとき，
+\begin{align}
+&  y(x_2 -x_1) + x ( y_1 - y_2 ) +x_1 y_2 - x_2 y_1=0 \\
 \label{2}
-& \therefore &y=  \left( \frac{y_2 - y_1}{x_2 -x_1} \right)x  + \frac{x_2 y_1 - x_1 y_2 }{x_2 -x_1}
-\end{eqnarray}
+& \therefore y \frac{y_2 - y_1}{x_2 -x_1} x  + \frac{x_2 y_1 - x_1 y_2 }{x_2 -x_1}
+\end{align}
 \eqref{2}に$x=x_1$を代入すると，
-\begin{eqnarray}
-y&=& \frac{x_1 y_2 -y_1 x_1 +x_2 y_1 - x_1 y_2}{x_2-x_1} \\
-& = & \frac{(x_2 - x_1)y_1}{x_2 - x_1} \\
-&=&y_1
-\end{eqnarray}
+\begin{align}
+y&= \frac{x_1 y_2 -y_1 x_1 +x_2 y_1 - x_1 y_2}{x_2-x_1} \\
+& =  \frac{(x_2 - x_1)y_1}{x_2 - x_1} \\
+&=y_1
+\end{align}
 \eqref{2}に$x=x_2$を代入すると，同様に$y=y_2$が得られる．ゆえに，たしかに直線を表す．\\
 $x_1 = x_2$のとき，\eqref{1}式は，
 \begin{equation}
@@ -963,11 +905,11 @@ $\textsl{Hint}：単純な行列の和・積に関する命題は，両辺の(i,
 \begin{proof}
 ~\\
 後半二つの主張は明らか．また，二つ目の主張は一つ目の主張と同様にして示すことができるので，一つ目のみ示すことにする．\\
-$A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列とする．示したい式の両辺がともに定義され，ともに$k \times m行列であることはよい．行列B+Cの(q,r)成分はb_{qr}+c_{qr}であるから，左辺の(p,r)成分は，$
-\begin{eqnarray*}
+$A=(a_{pq})$を$k \times l$行列，$B= (b_{qr})$，$C=(c_{qr})$を$l \times m$行列とする．示したい式の両辺がともに定義され，ともに$k \times m$行列であることはよい．行列$B+C$の$(q,r)$成分は$b_{qr}+c_{qr}$であるから，左辺の$(p,r)$成分は，
+\[
 \sum_{q=1}^{l}a_{pq}\left(b_{qr}+c_{qr}\right)=\sum_{q=1}^{l}a_{pq}b_{qr}+\sum_{q=1}^{l}a_{pq}c_{qr}
-\end{eqnarray*}
-と書ける．この等号の右辺は$ABの(p,r)成分とACの(p,r)成分の和である．$これより，主張が示された．
+\]
+と書ける．この等号の右辺は$AB$の$(p,r)$成分と$AC$の$(p,r)$成分の和である．これより，主張が示された．
 \end{proof}
 \end{leftbar}
 %
@@ -1010,7 +952,7 @@ $A=(a_{pq})をk \times l行列，B= (b_{qr})，C=(c_{qr})をl \times m$行列と
     \]
     となることが必要であるが，これを満たす$y_{11},y_{12},y_{21},y_{22} \in \mathbb{C}$は存在しない．よって後半の主張も示された．\qed
     \end{leftbar}
-%
+\newpage
     (2)：
     \begin{leftbar}
         $X$，$Y$を(1)で定義したものとする．このとき，
@@ -1259,26 +1201,22 @@ j + 2k =0 \\
 $X=(x_{ij})$，$Y=(y_{ij})$とする．
 ここで，$XY$の$(i，i)$成分は$\sum_{j=1}^{n} x_{ij} y_{ji}$であるから，
 \begin{equation}
-\label{問7:1}
 \mathrm{Tr}(XY)  =  \sum_{i=1}^{n} \left( \sum_{j=1}^{n} x_{ij} y_{ji} \right)
 \end{equation}
 となる．他方，$YX$については，同様の議論により，
-\begin{eqnarray}
-\mathrm{Tr} (YX) & = & \sum_{i=1}^{n} \left( \sum_{j=1}^{n}  y_{ij} x_{ji} \right) \nonumber \\
-\label{問7:2}
- & = & \sum_{i=1}^{n} \left( \sum_{j=1}^{n}  x_{ji} y_{ij}  \right)
-\end{eqnarray}
-\eqref{問7:2}式で$i$と$j$をおきかえれば，
+\begin{align}
+\mathrm{Tr} (YX) & =  \sum_{i=1}^{n}\left( \sum_{j=1}^{n}  y_{ij} x_{ji} \right) \nonumber \\
+ & =  \sum_{i=1}^{n} \left( \sum_{j=1}^{n}  x_{ji} y_{ij} \right)
+\end{align}
+$i$と$j$をおきかえれば，
 \begin{equation}
-\label{問7:3}
-\mathrm{Tr} (YX) = \sum_{j=1}^{n} \left( \sum_{i=1}^{n}  x_{ij} y_{ji}  \right)
+\mathrm{Tr} (YX) = \sum_{j=1}^{n} \left( \sum_{i=1}^{n}  x_{ij} y_{ji} \right)
 \end{equation}
-\eqref{問7:1}式と\eqref{問7:3}式を比較して，
+となる．これより，
 \begin{equation}
-\label{問7:4}
 \mathrm{Tr} (XY) = \mathrm{Tr} (YX)
 \end{equation}
-を得て，\eqref{問7:4}式より$\mathrm{Tr} (XY-YX) =0$であるが，一方，$\mathrm{Tr} (E_n) =n \neq 0$であるため，これは矛盾．\\
+を得て，これ式より$\mathrm{Tr} (XY-YX) =0$であるが，一方，$\mathrm{Tr} (E_n) =n \neq 0$であるため，これは矛盾．\\
 ゆえに，$XY-YX=E_n$となる$n$次行列$X$，$Y$は存在しないことが示された．
 \end{proof}
 \end{leftbar}
@@ -1835,10 +1773,10 @@ x_{n-1}=-\frac{a_1}{a_{n-1}}x_{1}-\frac{a_2}{a_{n-1}}x_{2}- \cdots -\frac{a_{n-2
 \begin{eqnarray*}
 {\rm dim}~W=
 \left\{
-\begin{array}{l}
+\begin{pmatrix}{l}
 n-1~~(\bm{a} \neq \bm{o}) \\
 ~~~~~n~~(\bm{a}=\bm{o})
-\end{array}
+\end{pmatrix}
 \right.
 \end{eqnarray*}
 となる．\\
