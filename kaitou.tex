@@ -875,7 +875,86 @@ x(y_1 - y_2) = -x_1 y_2 + x_2 y_1
 
 \newpage
 %
-\subsection{p30}
+問8：
+\begin{leftbar}
+    \begin{proof}
+    \[
+    \bm{a}=\begin{pmatrix} a_1 \\ a_2 \\ a_3 \end{pmatrix},\quad \bm{b}=\begin{pmatrix} b_1 \\ b_2 \\ b_3 \end{pmatrix},\quad \bm{c}=\begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix}
+    \]
+    とする．このとき，
+    \begin{align*}
+        &
+        \begin{pmatrix}
+            a_1 & a_2 & a_3 \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{pmatrix}
+        \begin{pmatrix}
+            a_1 & b_1 & c_1 \\
+            a_2 & b_2 & c_2 \\
+            a_3 & b_3 & c_3
+        \end{pmatrix}
+        \\
+         =& \begin{pmatrix}
+            {a_1}^2 +{a_2}^2 +{a_3}^2 & a_1 b_1 + a_2 b_2 + a_3 b_3 & a_1 c_1 + a_2 c_2 + a_3 c_3 \\
+            b_1 a_1 + b_2 a_2 + b_3 a_3 & {b_1}^2 +{b_2}^2 + {b_3}^2 & b_1 c_1 + b_2 c_2 + b_3 c_3 \\
+            c_1 a_1 + c_2 a_2 + c_3 a_3 & c_1 b_1 + c_2 b_2 + c_3 b_3 & {c_1}^2 +{c_2}^2 +{c_3}^2
+        \end{pmatrix}
+        \\
+        =& \begin{pmatrix}
+            (\bm{a},\bm{a}) & (\bm{a},\bm{b}) & (\bm{a},\bm{c}) \\
+            (\bm{b},\bm{a}) & (\bm{b},\bm{b}) & (\bm{b},\bm{c}) \\
+            (\bm{c},\bm{a}) & (\bm{c},\bm{b}) & (\bm{c},\bm{a})
+        \end{pmatrix}
+    \end{align*}
+    である．
+
+    一方，
+    \begin{align*}
+        \det (\bm{a},\bm{b},\bm{c})=
+        \begin{vmatrix}
+            a_1 & b_1 & c_1 \\
+            a_2 & b_2 & c_2 \\
+            a_3 & b_3 & c_3
+        \end{vmatrix}
+        & = c_1
+        \begin{vmatrix}
+            a_2 & b_2 \\
+            a_3 & b_3 
+        \end{vmatrix}
+        + c_2
+        \begin{vmatrix}
+            a_3 & b_3 \\
+            a_1 & b_1
+        \end{vmatrix}
+        + c_3
+        \begin{vmatrix}
+            a_1 & b_1 \\
+            a_2 & b_2
+        \end{vmatrix}
+        \\
+        & = c_1 (a_2 b_3-b_2 a_3)+c_2 (a_3 b_1 - b_3 a_1)+c_3 (a_1 b_2 -b_1 a_2)\\
+        & = a_3 (b_1 c_2 - b_2 c_1)+b_3 (c_1 a_2-c_2 a_1)+ c_3 (a_1 b_2 - b_1 a_2)\\
+        & =
+        \begin{vmatrix}
+            a_1 & a_2 & a_3 \\
+            b_1 & b_2 & b_3 \\
+            c_1 & c_2 & c_3
+        \end{vmatrix}
+    \end{align*}
+    であるから，これと行列式の積の性質により，
+    \[
+        \begin{vmatrix}
+            (\bm{a},\bm{a}) & (\bm{a},\bm{b}) & (\bm{a},\bm{c}) \\
+            (\bm{b},\bm{a}) & (\bm{b},\bm{b}) & (\bm{b},\bm{c}) \\
+            (\bm{c},\bm{a}) & (\bm{c},\bm{b}) & (\bm{c},\bm{a})
+        \end{vmatrix}
+        = {\det (\bm{a},\bm{b},\bm{c})}^2
+    \]
+    である．
+    \end{proof}
+\end{leftbar}
+\newpage
 %
 問10：\\
  イ)
@@ -984,7 +1063,47 @@ $A=(a_{pq})$を$k \times l$行列，$B= (b_{qr})$，$C=(c_{qr})$を$l \times m$�
 %
 \subsection{p42}
 %
-%
+問1：
+\begin{leftbar}
+    まず，
+    \[
+        \overline{A} \ \overline{A^{-1}} = \overline{A A^{-1}}=E,\quad \overline{A^{-1}} \ \overline{A} =\overline{A^{-1} A}=E
+    \]
+    より，$\overline{A}$は正則で，逆行列は$\overline{A^{-1}}$である．さらに，
+    \[
+        {}^t A {}^t A^{-1} ={}^t (A^{-1} A)=E,\quad {}^t A^{-1} {}^t A = {}^t (A A^{-1})=E
+    \]
+    であるから，${}^t A$は正則であり，逆行列は${}^t A^{-1}$である．
+\end{leftbar}
+問2：
+\begin{leftbar}
+    \[
+        A \coloneqq \begin{pmatrix} a & b \\ c & d \end{pmatrix},\quad A' \coloneqq \begin{pmatrix} x & y \\ z & w \end{pmatrix}
+    \]
+    とする．このとき，
+    \[
+        A A' = \begin{pmatrix} a x + b z & ay + bw \\ cx + dz & cy +dw \end{pmatrix}
+    \]
+    である．$AA'=E$となる条件は，$x$，$y$，$z$，$w$についてのふたつの連立方程式
+    \[
+        \begin{cases}
+            ax+bz =1 \\
+            cx+dz =0
+        \end{cases}
+        ,\quad 
+        \begin{cases}
+            ay+bw=0\\
+            xy+dw=1
+        \end{cases}
+    \]
+    が解を持つことで，その条件は$ad-bc \ne 0$である．そのときの解は，
+    \[
+        (x,y,z,w)=  (\frac{d}{ad-bc},-\frac{b}{ad-bc},-\frac{c}{ad-bc},\frac{a}{ad-bc})
+    \]
+    である．これを用いて$A'A$を計算すると，$A' A =E$となり．たしかに$A'$は$A$の逆行列である．
+
+    以上の議論により，$ad - bc \ne 0$となればよい．
+\end{leftbar}
 %
 \newpage
 %
